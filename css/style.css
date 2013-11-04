@@ -1,0 +1,226 @@
+
+/*навигация */
+@font-face {
+	font-family: 'EtelkaTextItalics';
+	 src: url('../fonts/EtelkaTextItalic.otf');
+	 
+}
+
+@font-face {
+	font-family: 'EtelkaTextBoldItalic';
+	 src: url('../fonts/EtelkaTextBoldItalic.otf');
+	 
+}
+
+
+body {
+	line-height:1;
+}
+
+.icon {
+	margin-right:8px;
+}
+.zalivka {
+	background: #129ba1;
+	
+}
+.nav-tabs { 
+border-bottom: none;
+}
+.headd ul li a {
+	font-size:11px;
+	color:#b8e1e3;
+	border:none;
+}
+.headd ul li a:hover,
+.headd ul li a:focus{
+	background:none;
+	color:#fff;
+	
+}
+.nav  .left-border a {
+	padding-right:0px;
+	padding-left:0px;
+}
+.nav .left-right a {
+	padding-right:0px;
+}
+
+.nav  .left-border span,
+.nav  .left-right span {
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.headd .menu-author li a {
+	color:#24ffff;
+	text-decoration:underline;
+}
+.headd .menu-author li a:hover,
+.headd .menu-author li a:focus {
+	background:none;
+}
+.poisk-head,.zakaz, .tel-head{
+	margin-top: 20px;
+	margin-bottom:20px;
+}
+
+.poisk-head {
+	background: url(../img/search.png)no-repeat;
+}
+.poisk-head {
+	font-size:12px;
+	width:100%;
+}
+.logotip {
+	margin-bottom:20px;
+	margin-top:6px;
+}
+.zakaz {
+	text-align:right;
+}
+.zakaz a{
+	color: #129ba1;
+	text-decoration:none;
+	font-size:11px;
+}
+.tel-head {
+	text-align:right;
+	font-size:18px;
+}
+.tel-2 {
+	color:#444;
+	font-family: EtelkaTextBoldItalic,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.tel-1 {
+	font-family: EtelkaTextItalics,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	color:#bfd2d8;
+}
+	
+/* Каталог*/
+
+.katalog {
+	font-size:11px;
+}
+
+.float-rigth {
+	float:right;
+}
+.skidki {
+	float:left;
+}
+.skidki span {
+	font-size:22px;
+}
+.skidki-img {
+	border-bottom: 1px solid #a6d9db;
+	padding-bottom: 16px;
+	margin-top:8px;
+}
+
+.last-img, .reklama {
+	margin-top:8px;
+	padding-bottom: 16px;
+}
+.tov {
+	margin-bottom: 14px;
+}
+.tovari {
+	
+	margin-top: 18px;
+}
+.contant {
+	background:#e4f8f9;
+	padding-bottom:60px;
+}
+.menu-footer{
+	background:url(../img/menu-background.jpg)repeat-x;
+	
+}
+.menu-footer img {
+	margin-left:-20px;
+}
+
+ul.menu-footer {
+    height:45px;
+	border-radius:6px;
+}
+.menu-footer li a {
+	line-height:1;
+}
+.navigation {
+	margin-bottom:15px;
+}
+.nav-2 ul li a{
+	color:#fff;
+}
+/*Footer*/
+.myfooter {
+	background:#129ba1;	
+	border-top: 3px solid #a7b935;
+	padding-bottom:35px;
+}
+.text-footer{
+	color:#fff;
+}
+.marg-top {
+margin-top:40px;
+}
+
+.tel-footer {
+	margin-top:20px;
+}	
+.tel-footer .tel-2 {
+	color:#fff;
+}
+.tel-footer  .tel-1{
+color:#9adbde;
+}
+.poisk-footer {
+	width:73%;
+	font-size:12px;
+	
+}
+.ok a {
+	font-size:10px;
+	color:#4eb4b9;
+	text-decoration:underline;
+}
+.tovari .col-md-2 {
+	width:20%;
+	padding-left:10px;
+}
+.tovari .tov {
+	font-size:22px;
+}
+.tovari .tov span {
+	color:#97ac0f;
+}
+
+.mail {
+	text-decoration:underline;
+	font-size:11px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mgk */
+
+body{
+	background: url(../img/body-bg.png) #e4f8f9 repeat-x;
+}
