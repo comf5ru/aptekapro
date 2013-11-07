@@ -1,209 +1,499 @@
 
-/*��������� */
+/*навигация */
 @font-face {
-	font-family: 'EtelkaTextItalics';
-	 src: url('../fonts/EtelkaTextItalic.otf');
-	 
+    font-family: 'EtelkaTextItalics';
+     src: url('../fonts/EtelkaTextItalic.otf');
+     
 }
 
 @font-face {
-	font-family: 'EtelkaTextBoldItalic';
-	 src: url('../fonts/EtelkaTextBoldItalic.otf');
-	 
+    font-family: 'EtelkaTextBoldItalic';
+     src: url('../fonts/EtelkaTextBoldItalic.otf');
+     
+}
+
+@media screen and (max-width: 992px) {
+    
 }
 
 
 body {
-	line-height:1;
+    line-height:1;
+    background: url(../img/body-bg.png) #e4f8f9 repeat-x;
 }
 
+
 .icon {
-	margin-right:8px;
+    margin-right:8px;
 }
 .zalivka {
-	background: #129ba1;
-	
+    background: #63ced3;
+    
 }
 .nav-tabs { 
 border-bottom: none;
 }
 .headd ul li a {
-	font-size:11px;
-	color:#b8e1e3;
-	border:none;
+    font-size:11px;
+    color:#b8e1e3;
+    border:none;
 }
 .headd ul li a:hover,
 .headd ul li a:focus{
-	background:none;
-	color:#fff;
-	
+    background:none;
+    color:#fff;
+    
 }
 .nav  .left-border a {
-	padding-right:0px;
-	padding-left:0px;
+    padding-right:0px;
+    padding-left:0px;
 }
 .nav .left-right a {
-	padding-right:0px;
+    padding-right:0px;
 }
 
 .nav  .left-border span,
 .nav  .left-right span {
-	padding-left:5px;
-	padding-right:5px;
+    padding-left:5px;
+    padding-right:5px;
 }
 
 .headd .menu-author li a {
-	color:#24ffff;
-	text-decoration:underline;
+    color:#24ffff;
+    text-decoration:underline;
+
 }
 .headd .menu-author li a:hover,
 .headd .menu-author li a:focus {
-	background:none;
-}
-.poisk-head,.zakaz, .tel-head{
-	margin-top: 20px;
-	margin-bottom:20px;
+    background:none;
 }
 
-.poisk-head {
-	background: url(../img/search.png)no-repeat;
+.menu-author {
+    padding-left: 14px;
+}
+
+
+.poisk-head,.zakaz, .tel-head{
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+.zakaz {
+    margin-top: 20px;
+    margin-bottom:20px;
+    margin-left: 0px;
 }
 .poisk-head {
-	font-size:12px;
-	width:100%;
+    background: url(../img/search.png)no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
 }
+.poisk-head {
+    font-size:12px;
+    width:100%;
+}
+
+.poisk-footer {
+    background: white url(../img/search.png)no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    width:73%;
+    font-size:12px;
+}
+
 .logotip {
-	margin-bottom:20px;
-	margin-top:6px;
+    margin-bottom:20px;
+    margin-top:6px;
 }
 .zakaz {
-	text-align:right;
+    text-align:right;
 }
 .zakaz a{
-	color: #129ba1;
-	text-decoration:none;
-	font-size:11px;
+    color: #63ced3;
+    text-decoration:none;
+    font-size:11px;
 }
 .tel-head {
-	text-align:right;
-	font-size:18px;
+    text-align:right;
+    font-size:18px;
 }
 .tel-2 {
-	color:#444;
-	font-family: EtelkaTextBoldItalic,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#444;
+    font-family: EtelkaTextBoldItalic,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .tel-1 {
-	font-family: EtelkaTextItalics,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	color:#bfd2d8;
+    font-family: EtelkaTextItalics,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#bfd2d8;
 }
-	
-/* �������*/
+    
+/* Каталог*/
+
+#catalog{
+  position: relative;
+  top: -6px;
+  left: -5px;
+}
 
 .katalog {
-	font-size:11px;
+    font-size:11px;
+    margin-left: 0px !important;
 }
 
 .float-rigth {
-	float:right;
+    float: right;
+}
+
+.float-left {
+    float: left;
 }
 .skidki {
-	float:left;
+    float:left;
 }
 .skidki span {
-	font-size:22px;
+    font-size:22px;
 }
+
+.skidki ul {
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.skidki li {
+    border-bottom: 1px solid #a6d9db;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    /*float: left;*/
+}
+
+.skidki ul p {
+   width: 87px;
+}
+
 .skidki-img {
-	border-bottom: 1px solid #a6d9db;
-	padding-bottom: 16px;
-	margin-top:8px;
+    border-bottom: 1px solid #a6d9db;
+    padding: 5px;
+    float: left;
+    
+    
+}
+
+.skidki-text {
+    float: right;
+    position: relative;
+}
+
+.skidki-text div {
+    display: block;
+}
+
+.skidki-text p {
+    margin-bottom: 5px;
+}
+
+.skidki-price {
+background: #63ced3;
+display: inline-block;
+padding: 2px 3px 2px 3px;
+color: white !important;
+font-size: 9px !important;
+text-decoration: none;
+/*font-weight: bold;*/
+line-height: 1;
+-moz-border-radius: 9px;
+-webkit-border-radius: 9px;
+/*-moz-box-shadow: 0 1px 3px #999;*/
+/*-webkit-box-shadow: 0 1px 3px #999;*/
+/*text-shadow: 0 -1px 1px #222;*/
+border-bottom: 1px solid #222;
+margin-right: 2px;
+position: relative;
+cursor: pointer;
+}
+
+.skidki-price a:hover {
+    background: #63ced3 !important;
+}
+.line-decoration{
+    padding-left: 12px;
+    
+
+}
+
+.line2-decoration{
+    padding-left: 15px;
+    position: absolute;
+    overflow: hidden;
+
+}
+
+.pic-head {
+    padding-left: 5px;
+
+}
+
+.pic-head ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.pic-head-left {
+  position: absolute;
+  right: 548px;
+  top: 108px;
+}
+
+.pic-head-right {
+  position: absolute;
+  right: 0px;
+  top: 108px;
+}
+
+.slider-left {
+  position: absolute;
+  right: 142px;
+  top: 218px;
+}
+
+.slider-right {
+  position: absolute;
+  right: 30px;
+  top: 218px;
+}
+#slider-numbers {
+  position: absolute;
+  right: 64px;
+  top: 218px;
+  font-family: 'PT Sans', serif;
+  color: #63ced3;
+}
+
+#slider-numbers li{
+  float: left;
+  padding-left: 9px;
+  font-family: Arial;
+}
+
+
+
+.slider ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+#actions {
+    color: white;
+    font-size: 22px;
+    font-family: 'EtelkaTextItalics';
+    position: absolute;
+    right: 309px;
+    top: 218px;
+}
+
+.slider-box {
+    position: relative;
 }
 
 .last-img, .reklama {
-	margin-top:8px;
-	padding-bottom: 16px;
+    margin-top:8px;
+    padding-bottom: 16px;
 }
 .tov {
-	margin-bottom: 14px;
+    margin-bottom: 14px;
+    margin-left: 15px;
+    font-family: 'EtelkaTextBoldItalic';
 }
 .tovari {
-	
-	margin-top: 18px;
+    
+    margin-top: 18px;
 }
 .contant {
-	background:#e4f8f9;
-	padding-bottom:60px;
+    /*background:#e4f8f9;*/
+    padding-bottom:60px;
 }
 .menu-footer{
-	background:url(../img/menu-background.jpg)repeat-x;
-	
+    background:url(../img/menu-background.jpg)repeat-x;
+    
 }
 .menu-footer img {
-	margin-left:-20px;
+    margin-left:-20px;
 }
 
 ul.menu-footer {
     height:45px;
-	border-radius:6px;
+    border-radius:6px;
 }
 .menu-footer li a {
-	line-height:1;
+    line-height:1;
 }
 .navigation {
-	margin-bottom:15px;
+    margin-bottom:15px;
 }
 .nav-2 ul li a{
-	color:#fff;
+    color:#fff;
 }
 /*Footer*/
 .myfooter {
-	background:#129ba1;	
-	border-top: 3px solid #a7b935;
-	padding-bottom:35px;
+    background:#63ced3; 
+    border-top: 3px solid #a7b935;
+    padding-bottom:35px;
 }
 .text-footer{
-	color:#fff;
+    color:#fff;
 }
 .marg-top {
 margin-top:40px;
 }
 
 .tel-footer {
-	margin-top:20px;
-}	
+    margin-top:20px;
+}   
 .tel-footer .tel-2 {
-	color:#fff;
+    color:#fff;
 }
 .tel-footer  .tel-1{
 color:#9adbde;
 }
-.poisk-footer {
-	width:73%;
-	font-size:12px;
-	
+
+
+input[type=search] {
+    border-radius: 5px;
+    outline: none; border: 
+    1px solid #999; 
+    padding: 4px; 
+    -webkit-appearance: none; 
+    -webkit-border-radius:5px;
+    padding-left: 20px;
 }
+
+
 .ok a {
-	font-size:10px;
-	color:#4eb4b9;
-	text-decoration:underline;
+    font-size:10px;
+    color:#4eb4b9;
+    text-decoration:underline;
 }
+
+.ok-text {
+    font-size:10px;
+    color:#63ced3;
+    text-decoration:underline;
+    padding: 5px;
+}
+
+.price {
+  font-family: 'PT Sans', serif;
+  }
+
+.skidki-price {
+  font-family: 'PT Sans', serif;
+  font-size: 11px;
+  }
+
+
 .tovari .col-md-2 {
-	width:20%;
-	padding-left:10px;
+
+    overflow: hidden;
+    width:180px;
+    height: 200px;
+    padding-left:10px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px;
 }
 .tovari .tov {
-	font-size:22px;
+    font-size:22px;
 }
 .tovari .tov span {
-	color:#97ac0f;
+    color:#97ac0f;
+}
+
+.tovar2 {
+    margin-left: 18px;
 }
 
 .mail {
-	text-decoration:underline;
-	font-size:11px;
+    text-decoration:underline;
+    font-size:11px;
 }
 
+/* Выезжающий блок в Хитах продаж и сезонных продажах*/
 
+.animate-box {
+    height: 45px;
 
+}
+
+.animate-btn {
+    position: absolute;
+    bottom: -68px;
+    background-color: white;
+
+}
+
+/* Кнопка купить*/
+
+.button {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 9px;
+    margin: 20px;
+    margin-bottom: 0;
+    border: 1px solid rgba(0,0,0,0.4) ;
+    box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.5),
+                0 0 1px 1px rgba(255,255,255,0.8),
+                0 0 0 6px rgba(0,0,0,0.06),
+                0 0 0 3px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.korzina-btn {
+    padding: 5px;
+    float: left;
+    color: #fff;
+    /*font-weight: 800;*/
+    font-size: 11px;
+    text-shadow: 1px 1px rgba(0,0,0,0.2);
+    /*text-transform: uppercase;*/
+    border-right: 1px solid rgba(255,255,255,0.3);
+}
+.price-btn {
+    padding: 5px;
+    float: left;
+    color: #fff;
+    /*font-weight: 800;*/
+    font-size: 11px;
+    text-shadow: 1px 1px rgba(255,255,255,0.3);
+    /*text-transform: uppercase;  */
+    border-left: 1px solid rgba(0,0,0,0.2);
+}
+
+/* colors */
+
+.green {
+    background: rgb(143,200,0);
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzhmYzgwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2NjhlMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  rgba(143,200,0,1) 0%, rgba(102,142,0,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(143,200,0,1)), color-stop(100%,rgba(102,142,0,1)));
+    background: -webkit-linear-gradient(top,  rgba(143,200,0,1) 0%,rgba(102,142,0,1) 100%);
+    background: -o-linear-gradient(top,  rgba(143,200,0,1) 0%,rgba(102,142,0,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(143,200,0,1) 0%,rgba(102,142,0,1) 100%);
+    background: linear-gradient(top,  rgba(143,200,0,1) 0%,rgba(102,142,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc800', endColorstr='#668e00',GradientType=0 );
+}
+./*green:hover {
+    background: rgb(102,142,0);
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2OGUwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4ZmM4MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  rgba(102,142,0,1) 0%, rgba(143,200,0,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(102,142,0,1)), color-stop(100%,rgba(143,200,0,1)));
+    background: -webkit-linear-gradient(top,  rgba(102,142,0,1) 0%,rgba(143,200,0,1) 100%);
+    background: -o-linear-gradient(top,  rgba(102,142,0,1) 0%,rgba(143,200,0,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(102,142,0,1) 0%,rgba(143,200,0,1) 100%);
+    background: linear-gradient(top,  rgba(102,142,0,1) 0%,rgba(143,200,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#668e00', endColorstr='#8fc800',GradientType=0 );
+*/}
+
+ /*Треугольная кнопка #breadcrumbs-three */
 
 
 
@@ -221,6 +511,3 @@ color:#9adbde;
 
 /* mgk */
 
-body{
-	background: url(../img/body-bg.png) #e4f8f9 repeat-x;
-}
