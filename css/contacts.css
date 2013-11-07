@@ -1,4 +1,4 @@
-.kontakti {
+.round-block {
   background-color: #fff;
   margin: 0;
   border: 1px solid #cddfe0;
@@ -20,7 +20,7 @@
 }
 
 .kontakti-info {
-  margin: 19px 0 0 10px;
+  margin: 19px 0 15px 10px;
   line-height: 18px;
   color: #49494b;
 }
@@ -82,7 +82,7 @@
 }
 
 .magazines {
-  margin-top: 15px;
+  margin: 15px 0;
   overflow: auto;
   height: 334px;
   color: #444;
@@ -131,3 +131,4 @@
   background-color: #fff;
   border: 1px solid #ccc;
 }
+
