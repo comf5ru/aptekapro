@@ -1,0 +1,152 @@
+.line-decoration2 {
+  padding-left: 8px;
+}
+
+.round-block {
+  padding: 19px;
+}
+.novost .image-border,
+.articles img {
+  border: 1px solid #6acbd0;
+}
+
+.content-text {
+  margin-top: 26px;
+}
+.content-text h4 {
+  color: #287579;
+}
+.content-text .content-date {
+  font-size: 11px;
+  color: #888;
+  padding: 8px 0 12px;
+}
+.content-text .text {
+  line-height: 22px;
+  font-size: 13px;
+}
+.content-text .content-bottom {
+  margin: 84px 0 15px;
+}
+.content-text .content-bottom .row div {
+  line-height: 24px;
+}
+.content-text .back a {
+  font-size: 13px;
+  color: #129ba1;
+  text-decoration: underline;
+}
+.content-text .back a.atxt {
+  text-decoration: none;
+}
+.content-text .back {
+  padding-right: 1px;
+}
+.content-text .share {
+  font-size: 11px;
+  font-weight: bold;
+  margin-left: 14px;
+}
+.content-text .share-label {
+  float: left;
+  margin-right: 11px;
+}
+.content-text .social a {
+  margin: 0 1px;
+}
+
+.articles {
+  line-height: 18px;
+  font-size: 11px;
+}
+.articles .article {
+  padding-left: 30px;
+  line-height: 15px;
+}
+.articles h5 {
+  margin: 0 0 4px;
+}
+.articles h5 a {
+  color: #129ba1;
+  text-decoration: underline;
+  line-height: 18px;
+}
+.articles .article-date {
+  color: #888;
+  padding: 3px 0 7px;
+}
+.articles .article-text {
+  color: #444;
+}
+
+.content-pager a {
+  -moz-box-shadow: 0px 3px 11px 0px #a0dadc;
+  -webkit-box-shadow: 0px 3px 11px 0px #a0dadc;
+  box-shadow: 0px 3px 11px 0px #a0dadc;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f0fbfc), color-stop(1, #d8f5f6));
+  background:-moz-linear-gradient(top, #f0fbfc 5%, #d8f5f6 100%);
+  background:-webkit-linear-gradient(top, #f0fbfc 5%, #d8f5f6 100%);
+  background:-o-linear-gradient(top, #f0fbfc 5%, #d8f5f6 100%);
+  background:-ms-linear-gradient(top, #f0fbfc 5%, #d8f5f6 100%);
+  background:linear-gradient(to bottom, #f0fbfc 5%, #d8f5f6 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0fbfc', endColorstr='#d8f5f6',GradientType=0);
+  background-color: #f0fbfc !important;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius: 6px !important;
+  border: none !important;
+  color:#444;
+  font-size:15px;
+  padding: 9px 15px !important;
+}
+
+.content-pager a:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #d8f5f6));
+  background:-moz-linear-gradient(top, #ffffff 5%, #d8f5f6 100%);
+  background:-webkit-linear-gradient(top, #ffffff 5%, #d8f5f6 100%);
+  background:-o-linear-gradient(top, #ffffff 5%, #d8f5f6 100%);
+  background:-ms-linear-gradient(top, #ffffff 5%, #d8f5f6 100%);
+  background:linear-gradient(to bottom, #ffffff 5%, #d8f5f6 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d8f5f6',GradientType=0);
+  background-color: #ffffff !important;
+}
+
+.content-pager a.active {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b6c513), color-stop(1, #97ac0f));
+  background:-moz-linear-gradient(top, #b6c513 5%, #97ac0f 100%);
+  background:-webkit-linear-gradient(top, #b6c513 5%, #97ac0f 100%);
+  background:-o-linear-gradient(top, #b6c513 5%, #97ac0f 100%);
+  background:-ms-linear-gradient(top, #b6c513 5%, #97ac0f 100%);
+  background:linear-gradient(to bottom, #b6c513 5%, #97ac0f 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b6c513', endColorstr='#97ac0f',GradientType=0);
+  background-color: #b6c513 !important;
+  border: none !important;
+  color:#fff;
+  border: 1px solid #97ac0f !important;
+}
+
+.content-pager a.arrow,
+.content-pager a.arrow:hover {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: transparent !important;
+  border: none;
+}
+.content-pager a.arrow {
+  color: #129ba1;
+  font-size: 15px;
+}
+.content-pager a.arrow:hover {
+  color: #97ac0f;
+}
+.content-pager .pager li {
+  padding-right: 1px;
+}
+
+.content-news {
+  padding-bottom: 10px;
+}
+.content-news .row.last .row {
+  margin-bottom: 0;
+}
