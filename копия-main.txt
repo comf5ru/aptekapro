@@ -1,262 +1,268 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>
-			Apteka.Pro
-		</title>
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<link  rel="stylesheet" href="css/bootstrap.min.css" media="all">
-		<link  rel="stylesheet" href="css/style.css" media="all">
-		
-	
-	</head>
-	
-		<body>
-			<!-- Шапка-->
-			<div class="headd">
-				<div class="zalivka">
-				<div class="container">
-					<div class="row"><!-- Навигация-->
-						<div class="col-md-9">
-							 <ul class="nav nav-tabs">
-							  <li class="left-right">
-								<a href="#">Главная <span>|</span></a>
-							  </li> 
-							  <li class="left-border"><a href="#">О компании  <span>|</span></a></li>
-							  <li class="left-border"><a href="#">Новости  <span>|</span></a></li>
-							  <li class="left-border"><a href="#">Покупателям  <span>|</span></a></li>
-							  <li class="left-border"><a href="#">Статьи  <span>|</span></a></li>
-							  <li class="left-border"><a href="#">Контактная информация</a></li>
-							</ul>
-						</div>
-						<div class="col-md-3 menu-author">
-							<ul class="nav nav-tabs ">
-							  <li>
-								<a href="#"><img src="img/key.png" class="icon">Вход</a>
-							  </li>
-							  <li><a href="#"><img src="img/korzina.png" class="icon">Корзина</a></li>
-							  <li><a href="#">Отложено</a></li>
-							</ul>
-						</div>
-					</div>	<!-- end row-->	
-				</div><!--End Навигация -->
-				</div>
-				<div class="container">
-					<div class="row"><!-- logo search-->
-						<div class="col-md-3">
-							<div class="logotip"><img src="img/logo.png"></div>
-						</div>
-						<div class="col-md-5">
-							<div class="poisk">
-								<form class="form-search">
-									 <input type="text" class="input-medium poisk-head" placeholder="Поиск">
-									 
-								</form>
-							</div>
-						</div>
-						<div class="col-md-2 zakaz">
-							<div><a href="#">Заказать звонок</a></div>
-						</div>
-						<div class="col-md-2 ">
-							<div class="tel-head"><span class="tel-1">+7 (495)</span> <span class="tel-2">999-88-77</span></div>
-						</div>
-					
-					
-					</div><!-- end row-->
-				</div><!--end container-->
-				
-				<div class="container">
-					<div class="row nav-2">
-						
-						<div class="col-md-12 navigation">
-							<ul class="nav nav-tabs menu-footer">
-								  <li><a href="#"><img src="img/katalog.png"></a></li>
-							  <li>
-								<a href="#">Лекарственные</br> препараты</a>
-							  </li>
-							  <li><a href="#">Здоровое </br>питание</a></li>
-							  <li><a href="#">Витамины </br>и БАДы</a></li>
-							  <li ><a href="#">Народные</br> средства</a></li>
-							  <li ><a href="#">Медицинская</br> техника</a></li>
-							  <li><a href="#">Уход за </br>больными</a></li>
-							  <li><a href="#">Первая </br>помощь</a></li>
-							  <li><a href="#">Красота</br>и здоровье</a></li>
-							  <li><a href="#">Лечебная </br>косметика</a></li>
-							  <li><a href="#">Красота</br>и здоровье</a></li>
-							  <li><a href="#">Лечебная </br>косметика</a></li>
-							  
-							</ul>
-						</div>
-					
-					</div><!-- end row-->
-				
-				
-						</div><!--end container-->
-				
-				<div class="container"><!-- slider-->
-				
-					<div class="row">
-						<div class="col-md-12">
-								<div class="row">
-									<div class="col-md-10 slider  float-rigth">
-										<div class="row">
-											<div class="col-md-7 pic-head">
-												<img src="img/pic-head.jpg">
-											</div>
-											<div class="col-md-5">
-													<img src="img/slider.png">
-											</div>
-									
-										</div><!-- end row-->
-									<div class="row tovari">
-					
-										
-											<div class="tov">Сезонные <span>товары</span></div>
-												
-												
-													<div class="col-md-2">
-													<div class="slider"><img src="img/tovar.png"></div>
-													</div>
-													
-													<div class="col-md-2">
-													<div class="slider"><img src="img/tovar.png"></div>
-													</div>
-													
-													<div class="col-md-2">
-													<div class="slider"><img src="img/tovar.png"></div>
-													</div>
-													
-													<div class="col-md-2">
-													<div class="slider"><img src="img/tovar.png"></div>
-													</div>
-													
-													<div class="col-md-2">
-													<div class="slider"><img src="img/tovar.png"></div>
-													</div>
-													
-													
-													
-												
-										
-									</div>
-									<div class="row tovari">
-					
-										
-											<div class="tov"> Хиты <span>продаж</span></div>
-												
-												
-													<div class="col-md-2">
-													<div class="slider"><img src="img/tovar.png"></div>
-													</div>
-													
-													<div class="col-md-2">
-													<div class="slider"><img src="img/tovar.png"></div>
-													</div>
-													
-													<div class="col-md-2">
-													<div class="slider"><img src="img/tovar.png"></div>
-													</div>
-													
-													<div class="col-md-2">
-													<div class="slider"><img src="img/tovar.png"></div>
-													</div>
-													<div class="col-md-2">
-													<div class="slider"><img src="img/tovar.png"></div>
-													</div>
-												
-										
-									</div><!-- end row-->		
-									</div>
-								<div class="col-md-2 skidki">
-									<span>Скидки</span>
-									<div class="skidki"><img src="img/skidki.png"></div>
-									<div class="skidki"><img src="img/skidki.png"></div>
-									<div class="skidki"><img src="img/skidki.png"></div>
-									<div class="skidki"><img src="img/skidki.png"></div>
-									<div class="skidki"><img src="img/skidki.png"></div>
-								</div>
-								</div><!-- end row-->
-						</div>		
-					</div><!-- end row-->
-					
-					
-				
-				</div><!--end container-->
-			
-			<div class="myfooter">		
-				<div class="container">
-				 
-					<div class="row">
-					
-						
-								<div class="col-md-3 marg-top">
-										<img src="img/logo-footer.png">
-										
-									
-								</div>	
-							
-								<div class="col-md-7 marg-top">
-									<div class="poisk">
-										<form class="form-search">
-											 <input type="text" class="input-medium poisk-footer" placeholder="Поиск">
-											 
-										</form>
-									</div>
-								</div>
-						
-							<div class="col-md-2 tel-footer">
-								<div class="tel-head"><span class="tel-1">+7 (495)</span> <span class="tel-2">999-88-77</span></div>
-							</div>
-					
-					</div><!-- end row-->	
-					
-				
-				
-						
-					
-					<div class="row">
-								<div class="col-md-1">
-									<img src="img/reiting.png">
-								</div>
-								<div class="col-md-2 text-footer">
-									<span>&copy; 2013 &laquo;Apteka.Pro&raquo;</span></br>
-									<span class="mail"> aptekapro@gmail.com</span>
-									
-								</div>
-					
-								<div class="col-md-7">
-									<ul class="nav nav-tabs">
-										  <li class="left-border">
-											<a href="#">Главная <span>|</span></a>
-										  </li>
-										  <li class="left-border"><a href="#">О компании <span>|</span></a></li>
-										  <li class="left-border"><a href="#">Новости <span>|</span></a></li>
-										  <li class="left-border"><a href="#">Покупателям <span>|</span></a></li>
-										  <li class="left-border"><a href="#">Статьи <span>|</span></a></li>
-										  <li class="left-border"><a href="#" >Контактная информация</a></li>
-									</ul>
-								</div>
-								
-								<div class="col-md-2 ok">
-									<img src="img/ok.png"><a href="#">разработка сайта и создание</a>
-								</div>
-							</div><!-- end row-->
-				
-				
-				</div><!-- end container-->
-				
-			</div><!-- end footer-->	
-				
-				
-			
-				
-			
-			</div>
-		<script src="js/bootstrap.min.js"> </script>
-		<script src="http://code.jquery.com/jquery-latest.js"></script>
-		</body>
-	
-	
+<div class="row">
+                  <div class="col-sm-12&nbsp;col-md-10" style="
+    float: right;
+"><div class="row">
+                      <div class="col-md-7 pic-head">
+                        <ul>
+                             <li><img src="img/pic-head.jpg"></li>
+                             <!-- <li><img src="img/pic-head.jpg"></li>
+                             <li><img src="img/pic-head.jpg"></li>
+                             <li><img src="img/pic-head.jpg"></li>
+                             <li><img src="img/pic-head.jpg"></li> -->
+                           </ul>
 
-</html>
+                           <div class="pic-head-left">
+                            <a href="#"><img src="img/button-left.png"></a>
+                          </div>
+
+                          <div class="pic-head-right">
+                            <a href="#"><img src="img/button-right.png"></a>
+                          </div>
+                      </div>
+                      <div class="col-md-5 slider">
+                           <ul>
+                             <li><img src="img/slider.png"></li>
+                             <!-- <li><img src="img/slider.png"></li>
+                             <li><img src="img/slider.png"></li>
+                             <li><img src="img/slider.png"></li>
+                             <li><img src="img/slider.png"></li> -->
+                           </ul>
+                           <p id="actions">Акции</p>
+                          <div class="slider-left">
+                            <a href="#"><img src="img/btn-left.png"></a>
+                          </div>
+                          <div id="slider-numbers">
+                            <ul>
+                              <li><a href="#">1</a></li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                              <li><a href="#">4</a></li>
+                              <li><a href="#">5</a></li>
+                            </ul>
+                          </div>
+                          <div class="slider-right">
+                            <a href="#"><img src="img/btn-right.png"></a>
+                          </div>
+                      </div>
+                  
+                    </div>
+                    </div>
+  
+  <div class="col-md-2 skidki">
+                  <span class="tov katalog">Скидки</span><img src="img/short-line.png" class="line-decoration">
+                <ul>
+                  <li><img src="img/skidki-logo.png">
+                  <div class="skidki-text ok-text"><p>Энергетический тортик</p><p><a href="#" class="skidki-price">12 560.00 ?</a><a href="#"><img src="img/korzina2.png" class="icon"></a></p></div></li>
+                  <li><img src="img/skidki-logo1.png">
+                    <div class="skidki-text ok-text"><p>Мульти витамин экстра для женщин капсулы, 124 шт.</p><p><a href="#" class="skidki-price">560.00 ?</a><a href="#"><img src="img/korzina2.png" class="icon"></a></p></div></li>
+                  <li><img src="img/skidki-logo2.png"><div class="skidki-text ok-text"><p>Энергетический тортик</p><p><a href="#" class="skidki-price">12 560.00 ?</a><a href="#"><img src="img/korzina2.png" class="icon"></a></p></div></li>
+                  <li><img src="img/skidki-logo.png"><div class="skidki-text ok-text"><p>Энергетический тортик</p><p><a href="#" class="skidki-price">12 560.00 ?</a><a href="#"><img src="img/korzina2.png" class="icon"></a></p></div></li>
+                  <li><img src="img/skidki-logo1.png"><div class="skidki-text ok-text"><p>Мульти витамин экстра для женщин капсулы, 124 шт.</p><p><a href="#" class="skidki-price">560.00 ?</a><a href="#"><img src="img/korzina2.png" class="icon"></a></p></div></li>
+                  <li><img src="img/skidki-logo2.png"><div class="skidki-text ok-text"><p>Энергетический тортик</p><p><a href="#" class="skidki-price">12 560.00 ?</a><a href="#"><img src="img/korzina2.png" class="icon"></a></p></div></li>
+                  <li><img src="img/skidki-logo.png"><div class="skidki-text ok-text"><p>Энергетический тортик</p><p><a href="#" class="skidki-price">12 560.00 ?</a><a href="#"><img src="img/korzina2.png" class="icon"></a></p></div></li>
+                  <li><img src="img/skidki-logo1.png"><div class="skidki-text ok-text"><p>Мульти витамин экстра для женщин капсулы, 124 шт.</p><p><a href="#" class="skidki-price">560.00 ?</a><a href="#"><img src="img/korzina2.png" class="icon"></a></p></div></li>
+                </ul>
+                  <div class="reklama"><img src="img/reklama.jpg"></div>
+
+                </div><div class="col-md-10 float-rigth">
+                    <!-- end row-->
+                  <div class="row tovari">
+          
+                    
+                      <div class="tov">Сезонные <span>товары</span><img src="img/long-line.png" class="line2-decoration"></div>
+                        
+                          
+                          <div class="col-md-2">
+                          <img src="img/tovar1.png">
+
+                          <div class="animate-btn" style="bottom: -68px;">
+                                                    <div class="animate-box"><div class="ok-text">Мульти витамин экстра для женщин капсулы, 124 шт.</div><p><span class="price">560.00 ?</span></p></div>
+                                                    <button class="button green">
+                                                      <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                                      <div class="price-btn">Купить</div>
+                                                    </button>
+                                                    <p class="ok-text">Отложить</p>
+                                                    </div>
+                                                    
+                          </div>
+                          
+                          <div class="col-md-2">
+                          <img src="img/tovar2.png">
+                          <div class="animate-btn tovar2" style="bottom: -68px;"><div class="animate-box"><div class="ok-text">Энергетический тортик</div><p><span class="price">12 560.00 ?</span></p></div>
+                                                    <button class="button green">
+                                                            <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                                            <div class="price-btn">Купить</div>
+                                                        </button>
+                                                      <p class="ok-text">Отложить</p></div>
+                                                        
+                          </div>
+                          
+                          <div class="col-md-2">
+                          <img src="img/tovar3.png">
+                          <div class="animate-btn" style="bottom: -68px;"><div class="animate-box"><div class="ok-text">Риофлора иммуно нео капсулы, 20 шт.</div><p><span class="price">10 560.00 ?</span></p></div>
+                                                    <button class="button green">
+                                                            <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                                            <div class="price-btn">Купить</div>
+                                                        </button>
+                                                      <p class="ok-text">Отложить</p></div>
+                                                        
+                          </div>
+                          
+                          <div class="col-md-2">
+                          <img src="img/tovar1.png">
+                          <div class="animate-btn" style="bottom: -68px;"><div class="animate-box"><div class="ok-text">Мульти витамин экстра для женщин капсулы, 124 шт.</div><p><span class="price">560.00 ?</span></p></div>
+                                                    <button class="button green">
+                                                            <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                                            <div class="price-btn">Купить</div>
+                                                        </button>
+                                                      <p class="ok-text">Отложить</p></div>
+                                                        
+                          </div>
+                          
+                          <div class="col-md-2">
+                          <img src="img/tovar2.png">
+                          <div class="animate-btn tovar2" style="bottom: -68px;"><div class="animate-box"><div class="ok-text">Энергетический тортик</div><p><span class="price">12 560.00 ?</span></p></div>
+                                                    <button class="button green">
+                                                            <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                                            <div class="price-btn">Купить</div>
+                                                        </button>
+                                                      <p class="ok-text">Отложить</p></div>
+                                                        
+                          </div>
+                          
+                          <div class="col-md-2">
+                          <img src="img/tovar3.png">
+                          <div class="animate-btn"><div class="animate-box"><div class="ok-text">Риофлора иммуно нео капсулы, 20 шт.</div><p><span class="price">10 560.00 ?</span></p></div>
+                                                    <button class="button green">
+                                                            <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                                            <div class="price-btn">Купить</div>
+                                                        </button>
+                                                      <p class="ok-text">Отложить</p></div>
+                                                        
+                          </div>
+                          
+                          <div class="col-md-2">
+                          <img src="img/tovar1.png">
+                          <div class="animate-btn"><div class="animate-box"><div class="ok-text">Мульти витамин экстра для женщин капсулы, 124 шт.</div><p><span class="price">560.00 ?</span></p></div>
+                                                    <button class="button green">
+                                                            <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                                            <div class="price-btn">Купить</div>
+                                                        </button>
+                                                      <p class="ok-text">Отложить</p></div>
+                                                        
+                          </div>
+                          
+                          <div class="col-md-2">
+                          <img src="img/tovar2.png">
+                          <div class="animate-btn tovar2"><div class="animate-box"><div class="ok-text">Энергетический тортик</div><p><span class="price">12 560.00 ?</span></p></div>
+                                                    <button class="button green">
+                                                            <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                                            <div class="price-btn">Купить</div>
+                                                        </button>
+                                                      <p class="ok-text">Отложить</p></div>
+                                                        
+                          </div>
+                          
+                          <div class="col-md-2">
+                          <img src="img/tovar3.png">
+                          <div class="animate-btn"><div class="animate-box"><div class="ok-text">Риофлора иммуно нео капсулы, 20 шт.</div><p><span class="price">10 560.00 ?</span></p></div>
+                                                    <button class="button green">
+                                                            <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                                            <div class="price-btn">Купить</div>
+                                                        </button>
+                                                      <p class="ok-text">Отложить</p></div>
+                                                        
+                          </div>
+                          
+                          <div class="col-md-2">
+                          <img src="img/tovar1.png">
+                          <div class="animate-btn"><div class="animate-box"><div class="ok-text">Мульти витамин экстра для женщин капсулы, 124 шт.</div><p><span class="price">560.00 ?</span></p></div>
+                                                    <button class="button green">
+                                                            <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                                            <div class="price-btn">Купить</div>
+                                                        </button>
+                                                      <p class="ok-text">Отложить</p></div>
+                                                        
+                          </div>
+                          
+                        
+                    
+                  </div>
+                  <div class="row tovari">
+          
+                    
+                      <div class="tov">Хиты <span>продаж</span> 
+                              </div>
+                        
+                        
+                          <div class="col-md-2">
+                          
+                              <img src="img/tovar1.png">
+                              <div class="animate-btn"><div class="animate-box"><div class="ok-text">Мульти     витамин экстра для женщин капсулы, 124 шт. 
+                                                        
+                                                            </div>
+                                                            <p><span class="price">560.00 ?</span></p>
+                                                            </div>
+                                                            <button class="button green">
+                                                                <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                                                <div class="price-btn">Купить</div>
+                                                            </button>
+                                                          <p class="ok-text">Отложить</p></div>
+                          
+                          </div>
+                          
+                          
+                          <div class="col-md-2">
+                          <img src="img/tovar2.png">
+
+                        
+                        <div class="animate-btn tovar2"><div class="animate-box">
+                                                <div class="ok-text">Энергетический тортик</div><p><span class="price">12 560.00 ?</span></p></div>
+                                                <button class="button green">
+                                                          <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                                          <div class="price-btn">Купить</div>
+                                                      </button>
+                                                    <p class="ok-text">Отложить</p></div>
+                                                      
+                          </div>
+                          
+                          <div class="col-md-2">
+                          <img src="img/tovar3.png">
+
+                          <div class="animate-btn"><div class="animate-box"><div class="ok-text">Риофлора иммуно нео капсулы, 20 шт.</div><p><span class="price">10 560.00 ?</span></p></div>
+                                                    <button class="button green">
+                                                            <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                                            <div class="price-btn">Купить</div>
+                                                        </button>
+                                                      <p class="ok-text">Отложить</p></div>
+                                                        
+                          </div>
+                          
+                          <div class="col-md-2">
+                          <img src="img/tovar1.png">
+                          <div class="animate-btn"><div class="animate-box"><div class="ok-text">Мульти витамин экстра для женщин капсулы, 124 шт.</div><p><span class="price">560.00 ?</span></p></div>
+                                                    <button class="button green">
+                                                            <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                                            <div class="price-btn">Купить</div>
+                                                        </button>
+                                                      <p class="ok-text">Отложить</p></div>
+                                                        
+                          </div>
+
+                          <div class="col-md-2">
+                          <img src="img/tovar2.png">
+                          <div class="animate-btn">
+                          <div class="animate-box tovar2"><div class="ok-text">Энергетический тортик</div><p><span class="price">12 560.00 ?</span></p></div>
+                          <button class="button green">
+                                                            <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                                            <div class="price-btn">Купить</div>
+                                                        </button>
+                                                      <p class="ok-text">Отложить</p></div>
+                                                        
+                          </div>
+                        
+                    
+                  </div><!-- end row-->   
+                  </div>
+                
+                </div>
