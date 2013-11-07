@@ -1,0 +1,133 @@
+.kontakti {
+  background-color: #fff;
+  margin: 0;
+  border: 1px solid #cddfe0;
+  margin-bottom: 10px;
+}
+
+.yamap {
+  margin: 19px 0px 19px 4px;
+  -webkit-box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.6);
+}
+
+.tovari {
+  margin-top: 0;
+}
+.tov {
+  margin-left: 0;
+}
+
+.kontakti-info {
+  margin: 19px 0 0 10px;
+  line-height: 18px;
+  color: #49494b;
+}
+.kontakti-info a {
+  color: #a3a509;
+}
+.kontakti-info div {
+  font-size: 11px;
+}
+.kontakti-info .btext {
+  font-size: 18px;
+  padding: 6px 0 6px;
+  margin-top: 4px;
+}
+
+.write-us {
+  color: #fff;
+  font-weight: bold;
+  -moz-box-shadow:inset 0px 0px 0px 1px #97ac0f;
+  -webkit-box-shadow:inset 0px 0px 0px 1px #97ac0f;
+  box-shadow:inset 0px 0px 0px 1px #97ac0f;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cad416), color-stop(1, #99ae0f) );
+  background:-moz-linear-gradient( center top, #cad416 5%, #99ae0f 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cad416', endColorstr='#99ae0f');
+  background-color:#cad416;
+  -webkit-border-radius:11px;
+  -moz-border-radius:11px;
+  border-radius:11px;
+  border:5px solid #e5e5e5;
+  height:38px;
+  width:138px;
+  margin-bottom: 23px;
+}
+
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    margin-top:-15px;
+}
+.breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #cccccc;
+    content: "»";
+}
+.breadcrumb li a:hover{
+    text-decoration: none;
+}
+.breadcrumb li a.main-pg{
+    color:#129ba1;
+}
+.breadcrumb > .active a{
+    color:#999999;
+}
+
+.label-apteks {
+  font-size: 18px;
+  margin: 16px 0 0 15px;
+}
+
+.magazines {
+  margin-top: 15px;
+  overflow: auto;
+  height: 334px;
+  color: #444;
+}
+
+.apteka {
+  font-size: 11px;
+  line-height: 13px;
+  margin-right: 11px;
+  padding: 8px 0;
+  border-bottom: 1px solid #cddfe0;
+}
+.apteka.active {
+  background-color: #e4f8f9;
+}
+.apteka .apt-name {
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 4px;
+}
+.apteka .apt-name a {
+  color: #444;
+}
+.apteka a {
+  color: #a3a509;
+}
+.apteka.last {
+  border-bottom: none;
+}
+
+#map2 {
+  margin: 17px 0 37px;
+}
+
+.magazines::-webkit-scrollbar {
+  width: 16px;
+}
+ 
+.magazines::-webkit-scrollbar-track {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+ 
+.magazines::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
