@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'HelveticaNeueCyr-Thin';
+     src: url('../fonts/HelveticaNeueCyr-Thin.ttf');
+     
+}
+
+.kabinet span {
+    color:#97ac0f;
+}
+
+.kabinet .titles{
+    font-size: 22px;
+    font-family: 'EtelkaTextBoldItalic';
+}
+
+.kabin{
+    border: 1px solid #ddd;
+    border-radius: 55px;
+}
+
+td.titlekabin{
+     font-family: Tahoma;
+     font-size: 18px;
+     color: #444;
+     height: 52px;
+ } 
+
+ tr.inform{
+     height: 40px;
+     background: #45cad1;
+     color:#066469;
+     font-family: Tahoma;
+     font-size: 11px;
+     font-weight:bold;
+ }
+
+ tr.inform_products{
+     height: 40px;
+     background: #e4f8f9;
+     color:#129ba1;
+     font-family: Tahoma;
+     font-size: 11px;
+     font-weight:bold;
+     border-bottom: 1px solid #cce0e1;
+ }
+
+ td.lines{
+     background:url(sline.png) center left no-repeat;
+ }
+
+
+ tr.inform_products_full{
+    height: 74px;
+    background: #FFF;
+    border-bottom: 1px solid #cce0e1;     
+ }
+
+ td.text{
+     color:#129ba1;
+     font-family: Tahoma;
+     font-size: 13px;
+     text-decoration: underline;     
+ }
+
+ tr.inform_products td{
+     text-align: center;
+ }
+
+ td.price{
+     color:#444;
+     font-family:"HelveticaNeueCyr-Thin";
+     font-size: 18px;
+     font-weight:bold;
+ }
+
+a.hrefstyle{
+    color:red;
+    font-family: Tahoma;
+    font-size: 13px;
+    text-decoration:underline;
+}
+
+tr.last{
+    height: 60px;
+    background: #FFF;
+}
+
+.danie .titles{
+    font-size: 18px;
+    font-family: Tahoma;
+}
+
+
+
+input.lol{
+    height: 26px;
+    width: 267px;
+    border: 1px solid #95ccc6;
+    border-radius: 5px;
+}
+
+label{
+    color:#444;
+    font-family: Tahoma;
+    font-size: 13px;
+    font-weight:bold;
+}
+
+label span{
+    color:#ff5854;
+    font-family: Tahoma;
+    font-size: 13px;
+    font-weight:bold;
+}
+
+input.lol2{
+    height: 90px;
+    width: 267px;
+    border: 1px solid #95ccc6;
+    border-radius: 5px;
+}
+
+.danie{
+    background: #FFF;
+    border: 1px solid #cce0e1;
+    border-radius: 5px;
+}
+
+.danie .vvod{
+    position: relative;
+    left:50%;
+    margin-left: -130px;
+}
+p.subs{
+    color:#444;
+    font-family: Tahoma;
+    font-size: 13px;
+}
