@@ -169,18 +169,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51b4b9', end
   border-radius:11px;
   border:5px solid #13989c;
 }
-.col-3{
-	width: 99%;
-}
-.col-3 .col{
-	width:31%;
-	margin-right:3%;
-	float: left;
-	clear: none;
-}
-.col-3 .col:last-child{
-	margin-right:0;
-}
+
 .search-result{
 	border:1px solid #d4e1e1;
 	border-radius: 5px;
