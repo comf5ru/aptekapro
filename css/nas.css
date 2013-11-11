@@ -1,0 +1,122 @@
+.titles2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 22px;
+    font-family: 'EtelkaTextBoldItalic';
+}
+
+
+     
+.lines-decoration {background:url(lines.png) repeat-x;}
+.topp {margin-top: 30px}
+.titles2:after {
+    background:url(lines.png) repeat-x;
+    content:" ";
+    position:absolute;
+    width:89%;
+    height: 10px;
+    margin: 5px 0 0 40px;    
+}
+.menuheaad{
+    padding-left: 10px;
+    font-family: Tahoma;
+    font-size:11px;
+    color:#129ba1;
+}
+.menuheaad span{
+    font-family: Tahoma;
+    font-size:11px;
+    color:#999;
+}
+ 
+input.lol3{
+    height: 30px;
+    width: 318px;
+    border: 1px solid #95ccc6;
+    border-radius: 5px;
+}
+
+input.lol4{
+    height: 80px;
+    width: 318px;
+    border: 1px solid #95ccc6;
+    border-radius: 5px;
+}
+
+
+p.sub2s{
+    margin-top: 20px;
+    color:#444;
+    font-family: Tahoma;
+    font-size: 13px;
+    font-weight:bold;
+}
+
+p.sub2s span{
+    margin-top: 20px;
+    color:#444;
+    font-family: Tahoma;
+    font-size: 13px;
+    font-weight:normal;
+}
+
+
+
+.bluetext{
+    color:#45cad0;
+    font-family: Tahoma;
+    font-size: 13px;
+    width: 360px;
+}
+
+.testbutt{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+.head88{
+    border: 1px solid #cddfe1;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    background: #FFF;
+}
+
+.head77 img{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+.head88 h2{
+    margin-top: 0px;
+    color: #287579;
+    font-family: Tahoma;
+    font-size: 18px;
+}
+p.nas1{
+    color: #444;
+    line-height: 20px;
+    font-family: Tahoma;
+    font-size: 13px;
+}
+
+.head88 .titles{
+    color: #287579;
+    font-family: Tahoma;
+    font-size: 18px;
+}
+
+p.text-licc{
+    padding-top:10px;
+    color: #444;
+    font-family: Tahoma;
+    font-size: 11px;
+}
+
+
+.pad{
+    width: 125%;
+    padding: 15px 15px 35px 15px
+    
+}

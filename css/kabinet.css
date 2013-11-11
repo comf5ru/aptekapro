@@ -23,7 +23,21 @@ td.titlekabin{
      font-size: 18px;
      color: #444;
      height: 52px;
+     padding-left: 15px;
  } 
+td.left20{
+ padding-left: 20px; 
+ width: 555px;  
+}
+td.fff span{
+    color: #fff;
+}
+td.cent{
+    text-align: center;
+}
+td.left30{
+ padding-left: 30px; 
+}
 
  tr.inform{
      height: 40px;
@@ -100,6 +114,7 @@ input.lol{
 }
 
 label{
+    margin-top:5px;
     color:#444;
     font-family: Tahoma;
     font-size: 13px;
@@ -127,11 +142,13 @@ input.lol2{
 }
 
 .danie .vvod{
+    width: 322px;
     position: relative;
     left:50%;
     margin-left: -130px;
 }
 p.subs{
+    margin-top:10px;
     color:#444;
     font-family: Tahoma;
     font-size: 13px;

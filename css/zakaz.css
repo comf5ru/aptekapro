@@ -1,0 +1,89 @@
+.zakaza span {
+    color:#97ac0f;
+}
+
+.zakaza .titles{
+    font-size: 22px;
+    font-family: 'EtelkaTextBoldItalic';
+}
+
+.kabin{
+    margin-top:20px;
+}
+
+td.left20{
+ padding-left: 20px; 
+ width: 555px;  
+}
+td.fff span{
+    color: #fff;
+}
+td.cent{
+    text-align: center;
+}
+td.rigg{
+    text-align: right;
+    font-family: Tahoma;
+    font-size:13px;
+}
+td.left30{
+ padding-left: 30px; 
+}
+
+     
+.lines-decoration {background:url(lines.png) repeat-x;}
+.topp {margin-top: 30px}
+.titles span:after {
+    background:url(lines.png) repeat-x;
+    content:" ";
+    position:absolute;
+    width:80%;
+    height: 10px;
+    margin: 5px 0 0 5px;    
+}
+
+ 
+input.lol3{
+    height: 30px;
+    width: 318px;
+    border: 1px solid #95ccc6;
+    border-radius: 5px;
+}
+
+input.lol4{
+    height: 80px;
+    width: 318px;
+    border: 1px solid #95ccc6;
+    border-radius: 5px;
+}
+
+
+p.sub2s{
+    margin-top: 20px;
+    color:#444;
+    font-family: Tahoma;
+    font-size: 13px;
+    font-weight:bold;
+}
+
+p.sub2s span{
+    margin-top: 20px;
+    color:#444;
+    font-family: Tahoma;
+    font-size: 13px;
+    font-weight:normal;
+}
+
+
+
+.bluetext{
+    color:#45cad0;
+    font-family: Tahoma;
+    font-size: 13px;
+    width: 360px;
+}
+
+.testbutt{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
