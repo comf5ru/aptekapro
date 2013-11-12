@@ -82,15 +82,17 @@ ul.nav-tabs li a:hover,
     position: relative;
     z-index:90;
 }
+.blueshadow{
+    -webkit-box-shadow: 0px 5px 30px rgba(6, 100, 105, 0.75);
+    -moz-box-shadow:    0px 5px 30px rgba(6, 100, 105, 0.75);
+    box-shadow:         0px 5px 30px rgba(6, 100, 105, 0.75);
+}
 .vipod{
     display: none;
     position: absolute;
     top: 44px;
     border:1px solid #e5e5e5;
     border-radius: 3px;
-    -webkit-box-shadow: 0px 5px 30px rgba(6, 100, 105, 0.75);
-    -moz-box-shadow:    0px 5px 30px rgba(6, 100, 105, 0.75);
-    box-shadow:         0px 5px 30px rgba(6, 100, 105, 0.75);
     z-index:90;
     background: #fff;
     padding: 20px;
@@ -202,6 +204,12 @@ ul.nav-tabs li a:hover,
     border-bottom: 1px solid #a6d9db;
     padding-bottom: 17px;
     padding-top: 8px;
+}
+.minicard:first-child {
+    border-top: 0;
+}
+.minicard:last-child {
+    border-bottom: 0;
 }
 .minicard a{
     font-size:11px;
@@ -578,9 +586,25 @@ input[type=search] {
 .animate-btn {
     position: absolute;
     bottom: -68px;
-    background-color: white;
-    padding:10px;
+    width: 100%;
 }
+
+.animate-btn .ok-text{
+    display: block;
+}
+.animate-btn-whitebg{
+    padding:10px;
+    background-color: white;
+}
+.animate-btn-gradient{
+    width: 100%;    
+    height:17px;
+    display: block;
+    background: url(../img/animatebg.png) bottom center no-repeat;
+    background-size: contain;
+    display: none;
+}
+
 
 /* Кнопка купить*/
 
@@ -613,11 +637,24 @@ input[type=search] {
 
 
 }
-.greenbg{
+
+.darkbg,.greenbg{
     margin:6px auto;
     display: inline-block;
     padding:4px;
     border-radius: 10px;
+}
+.darkbg{
+    background: rgb(18,145,150); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(18,145,150,1) 1%, rgba(35,161,167,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(18,145,150,1)), color-stop(100%,rgba(35,161,167,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(18,145,150,1) 1%,rgba(35,161,167,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(18,145,150,1) 1%,rgba(35,161,167,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(18,145,150,1) 1%,rgba(35,161,167,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(18,145,150,1) 1%,rgba(35,161,167,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#129196', endColorstr='#23a1a7',GradientType=0 ); /* IE6-9 */    
+}
+.greenbg{
     background: rgb(229,229,229); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(229,229,229,1) 1%, rgba(248,248,248,1) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(229,229,229,1)), color-stop(100%,rgba(248,248,248,1))); /* Chrome,Safari4+ */
@@ -640,6 +677,11 @@ input[type=search] {
     background: linear-gradient(to bottom, rgba(201,213,22,1) 1%,rgba(201,213,22,1) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9d516', endColorstr='#c9d516',GradientType=0 ); /* IE6-9 */
 }
+.darkbg .green{
+    color:#fff;
+    font-size: 13px;
+    padding: 6px 12px
+}
 
 
 .bottomshadow {
@@ -651,22 +693,122 @@ input[type=search] {
 }
 
 
- /*Треугольная кнопка #breadcrumbs-three */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* mgk */
 
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+position: relative;
+min-height: 1px;
+padding-right: 5px;
+padding-left: 5px;
+}
+.row {
+margin-right: -5px;
+margin-left: -5px;
+}
 
+.content{
+    padding: 10px 0px;
+}
+
+.container {
+padding-right: 5px;
+padding-left: 5px;
+margin-right: auto;
+margin-left: auto;
+}
+
+
+
+.modal-content{
+    background: rgb(27,205,208); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(27,205,208,1) 0%, rgba(18,155,161,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(27,205,208,1)), color-stop(100%,rgba(18,155,161,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(27,205,208,1) 0%,rgba(18,155,161,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(27,205,208,1) 0%,rgba(18,155,161,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(27,205,208,1) 0%,rgba(18,155,161,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(27,205,208,1) 0%,rgba(18,155,161,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1bcdd0', endColorstr='#129ba1',GradientType=0 ); /* IE6-9 */    
+
+    color:#fff;
+
+}
+.modal-content a{
+    color:#fff;
+}
+.modal-content .registertabs {
+    font-family: EtelkaTextBoldItalic;
+    padding-left: 0px;
+}
+.modal-content .registertabs li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+}
+.modal-content .registertabs li a{
+    font-family: EtelkaTextBoldItalic;
+    font-size: 24px;
+    text-decoration: none;
+    border-bottom: 2px dotted #fff;
+}
+
+.modal-content .registertabs li.active a {
+    border-bottom: 0px;
+}
+
+.modal-content .close{
+    background: url(../img/close.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    opacity: 0.9;
+}
+.wavy-line-dark{
+    width: 100%;
+    height:4px;
+    background:url(../img/darkline.png) center repeat-x;
+    display: block;
+
+    margin: 12px 0px ;
+
+}
+
+
+
+.modal-header{
+    border-bottom: 0px;
+}
+.modal-content p{
+    font-size: 11px;
+}
+.modal-content label{
+    width: 100%;
+}
+.modal-content .darkbg{
+    margin-top:24px;
+}
+.modal-content input[type=text]{
+    width: 100%;
+    height: 26px;
+    border-radius: 3px;
+    border:1px solid #689ea1;
+    margin-bottom:12px;
+}
+#savemi{
+    display: inline-block;
+}
+.modal{
+    background:rgba(255,255,255,0.8);
+}
+.modal-dialog{
+    padding-top:150px;
+    width: 360px;
+}
+.savemi input,.savemi label{
+    margin: 0px;
+}
+.savemi{
+    margin-bottom: 30px;
+}
+.savemilabel{
+    font-weight: normal;
+}

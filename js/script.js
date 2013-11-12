@@ -4,16 +4,17 @@ $('.carousel').carousel();
 
 
 $(".row.tovari .tovarcol").hover(function() {
-	$(this).find(".animate-btn").stop(true).animate({"bottom":"0"})
+	$(this).find(".animate-btn").stop(true).animate({"bottom":"0"},"default")
+	$(this).find(".animate-btn-gradient").stop(true).show("default");
+
 }, function() {
-	$(this).find(".animate-btn").stop(true).animate({"bottom":"-68px"})
+	$(this).find(".animate-btn").stop(true).animate({"bottom":"-68px"},"default")
+	$(this).find(".animate-btn-gradient").stop(true).hide("default");
 });
 
-console.log('123');
 
 
 $(".poisk input").focus(function(){
-console.log('23');
 	$(".vipod").show();
 })
 
