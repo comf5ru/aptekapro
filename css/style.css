@@ -163,6 +163,28 @@ ul.nav-tabs li a:hover,
 	color:#9cb5be;
 }
 
+.slemenu{
+    float: right;
+    position: relative;
+    display: block;
+    padding-top:10px;
+}
+.slemenu li{
+ float:left;
+ list-style-type: none;
+}
+
+.slemenu li a{
+    padding-left: 20px;
+    color:#24ffff;
+    font-size:11px;
+}
+.slemenu li span{
+    padding-left:3px;
+    color:#fff;
+    font-size:11px;
+    text-decoration: none: ;
+}
 .logotip {
     margin-bottom:20px;
     margin-top:6px;
