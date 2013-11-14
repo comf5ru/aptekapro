@@ -344,11 +344,44 @@ ul.nav-tabs li a:hover,
     float:right;
     margin-top: 2px;
 }
+
+
 #slider-numbers ul{
     padding:0 5px;
 }
 #slider-numbers {
     padding:0 5px;
+}
+
+#slider-numbers .carousel-indicators {
+position: relative;
+bottom: 0px;
+left: 0%;
+z-index: 15;
+width: auto;
+padding-left: 0;
+margin-left: 0;
+text-align: center;
+list-style: none;
+}
+
+#slider-numbers .carousel-indicators li {
+display: inline-block;
+width: auto;
+height: auto;
+margin: 0px;
+text-indent: 1px;
+cursor: pointer;
+border: 0;
+border-radius: 0;
+}
+
+#slider-numbers .carousel-indicators .active {
+width: auto;
+height: auto;
+margin: 0px;
+background-color: transparent;
+    color:#fff;
 }
 
 #slider-numbers li {
@@ -363,7 +396,7 @@ ul.nav-tabs li a:hover,
   font-size: 13px;
   font-weight: bold;
 }
-#slider-numbers a:hover{
+#slider-numbers a:hover , #slider-numbers .active a{
     color:#fff;
 }
 
