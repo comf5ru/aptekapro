@@ -162,7 +162,9 @@ ul.nav-tabs li a:hover,
 	padding-left:7px;
 	color:#9cb5be;
 }
-
+ul.paddmenu{
+    padding-right:15px;
+}
 .slemenu{
     float: right;
     position: relative;
@@ -204,9 +206,8 @@ ul.nav-tabs li a:hover,
 }
 .tel-head-2 {
     margin-left: -5px;
-    width: 102%;
-    text-align:right;
-    font-size:20px;
+    text-align: right;
+    font-size: 20px;
 }
 .tel-2 {
     color:#444;
@@ -540,8 +541,17 @@ ul.menu-footer {
 
 /*Footer*/
 .myfooter {
-    background:#129ba1 url(../img/footerbg.png) top center repeat-x; 
+    background:#129ba1 url(../img/footerlight.png) top center repeat-x; 
     padding-bottom:35px;
+    border-top: 3px solid #97ac0f;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    -moz-border-image: url(../img/bordertop.png) 1 0 0 round;
+    -webkit-border-image: url(../img/bordertop.png) 1 0 0 round;
+    -o-border-image: url(../img/bordertop.png) 1 0 0 round;
+    border-image: url(../img/bordertop.png) 1 0 0 round;
+}
 }
 
 .nav-tabs>li>a{
@@ -557,14 +567,22 @@ ul.menu-footer {
     color:#fff;
 }
 .text-footer{
-    color:#fff;
+    margin-top: 5px;
+    color: #def2f3;
+    font-size: 13px;
 }
 .marg-top {
 margin-top:40px;
+
+}
+
+.directfooter{
+    margin-top:5px;
 }
 
 .tel-footer {
-    margin-top:20px;
+    margin-top:34px;
+    right: 14px;
 }   
 .tel-footer .tel-2 {
     color:#fff;
@@ -583,15 +601,18 @@ input[type=search] {
     -webkit-border-radius:5px;
     padding-left: 20px;
 }
-
+.ok{
+    margin-top:5px;
+}
 
 .ok >img{
 	margin-left:-10px;
 }
 
 .ok a {
+    margin-top:5px;
     font-size:10px;
-    color:#4eb4b9;
+    color:#8bccce;
     text-decoration:underline;
 	margin-left:10px;
 }
