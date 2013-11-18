@@ -50,22 +50,37 @@ ul.nav-tabs li a:hover,
     color:#fff;}
 
   
-
-.nav  .left-border a,
-.nav  .left-border a:hover {
-    border-left: 1px solid #b6e2e3;
+.nav li.left-border:before{
+    color: #b7e1df;
+    content: " | ";
+    font-size:11px;
+    float: left;
+    padding-top: 12px;
+    width: 1px;
+}
+.nav  .left-border a{
     -webkit-border-radius: 0px;
             border-radius: 0px;
-    margin-top: 11px;
-    padding-top: 0px;
-    height: 12px;
-    padding-right: 7px;
-    padding-left: 7px;
+    padding-right: 4px;
+    text-decoration: none;
+    padding-left: 10px;
 }
+
+.nav  .left-border a:hover {
+    -webkit-border-radius: 0px;
+            border-radius: 0px;
+    padding-right: 4px;
+    padding-left: 10px;
+}
+
 .nav .right-border a {
-    margin-top: 11px;
-    padding-top: 0px;
-    padding-right:7px;
+    padding-right: 4px;
+    text-decoration: none;
+    
+}
+
+.nav .right-border a:hover {
+    padding-right: 4px;
 }
 
 /*.nav  .left-border span,
@@ -582,7 +597,7 @@ margin-top:40px;
 
 .tel-footer {
     margin-top:34px;
-    right: 14px;
+    right: 10px;
 }   
 .tel-footer .tel-2 {
     color:#fff;
@@ -607,6 +622,7 @@ input[type=search] {
 
 .ok >img{
 	margin-left:-10px;
+    box-shadow: 0px 2px 3px #0c7276;
 }
 
 .ok a {
@@ -694,6 +710,7 @@ input[type=search] {
 
 .animate-btn .ok-text{
     display: block;
+    margin-bottom: 7px;
 }
 .animate-btn-whitebg{
     padding:10px;
@@ -715,8 +732,8 @@ input[type=search] {
     cursor: pointer;
 }
 .korzina-btn {
-    padding-top: 3px;
-    padding-bottom: 4px;
+    padding-top: 5px;
+    padding-bottom: 6px;
     padding-right: 6px;
     float: left;
     color: #fff;
@@ -727,11 +744,11 @@ input[type=search] {
     border-right: 1px solid #99a311;
 }
 .price-btn {
-    padding: 4px 12px;
+    padding: 6px 14px;
     float: left;
     color: #fff;
     /*font-weight: 800;*/
-    font-size: 11px;
+    font-size: 13px;
     text-shadow: 1px 1px rgba(255,255,255,0.3);
     /*text-transform: uppercase;  */
 }
@@ -744,7 +761,7 @@ input[type=search] {
 }
 
 .darkbg,.greenbg{
-    margin:6px auto;
+    margin:4px auto;
     display: inline-block;
     padding:4px;
     border-radius: 10px;
