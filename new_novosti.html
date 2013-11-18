@@ -67,7 +67,6 @@
               <input name="pass1" type="text">
               <label>Пароль повторно <span>*</span></label>
               <input name="pass2" type="text">
-
               <div class="darkbg">
               <button class="green">Войти</button>
               </div>
@@ -79,6 +78,39 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
+<!-- Modal 2-->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content blueshadow">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <ul class="registertabs">
+          <li class="active"><a href="#callme" data-toggle="tab">Обратный звонок</a></li>
+        </ul>
+        <div class="wavy-line-dark"></div>
+        <!-- Tab panes -->
+        <div class="container">
+          <div class="tab-content">
+          <div class="tab-pane active" id="callme">
+              <form id="inputform">
+              <label>Имя <span>*</span></label>
+              <input name="fio" type="text">
+              <label>Телефон <span>*</span></label>
+              <input name="phone" type="text">
+              <div class="darkbg">
+              <button class="green">Жду звонка</button>
+              </div>
+              </form>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal 2-->
+
 
   <header  class="headd">
     <div class="zalivka">
@@ -148,18 +180,18 @@
           <div class="container"><!-- logo search-->
 
 
-            <div class="col-md-3">
+            <div class="col-md-2 col-lg-2">
               <div class="logotip"><a href="#"><img src="img/logo.png"></a></div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-offset-1 col-md-4 col-lg-5">
               <div class="poisk">
                 <form action="" placeholder="Search" class="form-search" name="search">
                    <input type="search" class="input-medium poisk-head" placeholder="Поиск">
                 </form>
               </div>
             </div>
-            <div class="col-md-4 ">
-              <div class="zakaz"><a href="#"><img src="img/phone-arrow.png"></a></div>
+            <div class="col-md-5 col-lg-4">
+              <div class="zakaz"><a href="#" data-toggle="modal" data-target="#myModal2"><img src="img/phone-arrow.png"></a></div>
               <div class="tel-head"><span class="tel-1">+7 (495)</span> <span class="tel-2">999-88-77</span></div>
             </div>
           
@@ -305,11 +337,11 @@
             </div>           
           <div class="row  content">
                     <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 col-lg-12">
             <div class="row round-block articles img-rounded">
               <div class="row">
-                <div class="col-md-2"><img class="image-border img-rounded" src="img/article-image.jpg"></div>
-                <div class="col-md-10">
+                <div class="col-md-3 col-lg-2"><img class="image-border img-rounded" src="img/article-image.jpg"></div>
+                <div class="col-md-9 col-lg-10">
                   <div class="article">
                     <h5><a href="#">По результатам 1 полугодия 2013 г. аптечная сеть «Ригла» заняла первые</a></h5>
                     <div class="article-date">30 Сентября 2013</div>
@@ -327,11 +359,11 @@
           </div>
         </div><!-- end row-->
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 col-lg-12">
             <div class="row round-block articles img-rounded">
               <div class="row">
-                <div class="col-md-2"><img class="image-border img-rounded" src="img/article-image2.jpg"></div>
-                <div class="col-md-10">
+                <div class="col-md-3 col-lg-2"><img class="image-border img-rounded" src="img/article-image2.jpg"></div>
+                <div class="col-md-9 col-lg-10">
                   <div class="article">
                     <h5><a href="#">По результатам 1 полугодия 2013 г. аптечная сеть «Ригла» заняла первые места сразу в трех основных рейтингах</a></h5>
                     <div class="article-date">30 Сентября 2013</div>
@@ -349,11 +381,11 @@
           </div>
         </div><!-- end row-->
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 col-lg-12">
             <div class="row round-block articles img-rounded">
               <div class="row">
-                <div class="col-md-2"><img class="image-border img-rounded" src="img/article-image.jpg"></div>
-                <div class="col-md-10">
+                <div class="col-md-3 col-lg-2"><img class="image-border img-rounded" src="img/article-image.jpg"></div>
+                <div class="col-md-9 col-lg-10">
                   <div class="article">
                     <h5><a href="#">По результатам 1 полугодия 2013 г. аптечная сеть «Ригла» заняла первые</a></h5>
                     <div class="article-date">30 Сентября 2013</div>
@@ -371,11 +403,11 @@
           </div>
         </div><!-- end row-->
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 col-lg-12">
             <div class="row round-block articles img-rounded">
               <div class="row">
-                <div class="col-md-2"><img class="image-border img-rounded" src="img/article-image2.jpg"></div>
-                <div class="col-md-10">
+                <div class="col-md-3 col-lg-2"><img class="image-border img-rounded" src="img/article-image2.jpg"></div>
+                <div class="col-md-9 col-lg-10">
                   <div class="article">
                     <h5><a href="#">По результатам 1 полугодия 2013 г. аптечная сеть «Ригла» заняла первые места сразу в трех основных рейтингах</a></h5>
                     <div class="article-date">30 Сентября 2013</div>
@@ -393,11 +425,11 @@
           </div>
         </div><!-- end row-->
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 col-lg-12">
             <div class="row round-block articles img-rounded">
               <div class="row">
-                <div class="col-md-2"><img class="image-border img-rounded" src="img/article-image.jpg"></div>
-                <div class="col-md-10">
+                <div class="col-md-3 col-lg-2"><img class="image-border img-rounded" src="img/article-image.jpg"></div>
+                <div class="col-md-9 col-lg-10">
                   <div class="article">
                     <h5><a href="#">По результатам 1 полугодия 2013 г. аптечная сеть «Ригла» заняла первые</a></h5>
                     <div class="article-date">30 Сентября 2013</div>
@@ -415,11 +447,11 @@
           </div>
         </div><!-- end row-->
         <div class="row last">
-          <div class="col-md-12">
+          <div class="col-md-12 col-lg-12">
             <div class="row round-block articles img-rounded">
               <div class="row">
-                <div class="col-md-2"><img class="image-border img-rounded" src="img/article-image2.jpg"></div>
-                <div class="col-md-10">
+                <div class="col-md-3 col-lg-2"><img class="image-border img-rounded" src="img/article-image2.jpg"></div>
+                <div class="col-md-9 col-lg-10">
                   <div class="article">
                     <h5><a href="#">По результатам 1 полугодия 2013 г. аптечная сеть «Ригла» заняла первые места сразу в трех основных рейтингах</a></h5>
                     <div class="article-date">30 Сентября 2013</div>
@@ -451,32 +483,19 @@
         </div>
           </div><!-- end row-->   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
           </div>
         </div>
       </div>    
       </div>    
 
       
-    <footer class="myfooter">    
+<footer class="myfooter">    
       <div class="container">
         <div class="row">
-          <div class="col-md-3 marg-top">
+          <div class="col-md-2 col-lg-2 marg-top">
               <img src="img/logo-footer.png">
           </div>  
-          <div class="col-md-7 marg-top">
+          <div class="col-md-offset-1 col-md-6 col-lg-offset-1 col-lg-5 marg-top">
             <div class="poisk">
               <form class="form-search">
                  <input type="search" class="input-medium poisk-footer" placeholder="Поиск">
@@ -484,19 +503,19 @@
               </form>
             </div>
           </div>
-          <div class="col-md-2 tel-footer">
+          <div class="col-md-3 col-lg-offset-2 col-lg-2 tel-footer">
             <div class="tel-head-2"><span class="tel-1">+7 (495)</span> <span class="tel-2">999-88-77</span></div>
           </div>
         </div><!-- end row--> 
         <div class="row">
-          <div class="col-md-1 directfooter">
+          <div class="col-md-1 col-lg-1 directfooter">
             <img src="img/reiting.png">
           </div>
-          <div class="col-md-2 text-footer">
+          <div class="col-md-2 col-lg-2 text-footer">
             <span>&copy; 2013 &laquo;Apteka.Pro&raquo;</span></br>
             <span class="mail"> aptekapro@gmail.com</span>
           </div>
-          <div class="col-md-7">
+          <div class="col-md-6 col-lg-5">
             <ul class="nav simplemenu nav-tabs">
                 <li class="right-border">
                 <a href="#">Главная</a>
@@ -508,7 +527,7 @@
                 <li class="left-border"><a href="#" >Контактная информация</a></li>
             </ul>
           </div>
-          <div class="col-md-2 ok">
+          <div class="col-md-2 col-lg-2 ok">
             <img src="img/ok.png"><a href="#">разработка сайта и создание</a>
           </div>
         </div><!-- end row-->
