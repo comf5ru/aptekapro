@@ -67,18 +67,51 @@
               <input name="pass1" type="text">
               <label>Пароль повторно <span>*</span></label>
               <input name="pass2" type="text">
-
               <div class="darkbg">
               <button class="green">Войти</button>
               </div>
               </form>
             </div>
           </div>
+          </div>
         </div>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content blueshadow">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <ul class="registertabs">
+          <li class="active"><a href="#callme" data-toggle="tab">Обратный звонок</a></li>
+        </ul>
+        <div class="wavy-line-dark"></div>
+        <!-- Tab panes -->
+        <div class="container">
+          <div class="tab-content">
+          <div class="tab-pane active" id="callme">
+              <form id="inputform">
+              <label>Имя <span>*</span></label>
+              <input name="fio" type="text">
+              <label>Телефон <span>*</span></label>
+              <input name="phone" type="text">
+              <div class="darkbg">
+              <button class="green">Жду звонка</button>
+              </div>
+              </form>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 
   <header  class="headd">
     <div class="zalivka">
@@ -159,7 +192,7 @@
               </div>
             </div>
             <div class="col-md-5 col-lg-4">
-              <div class="zakaz"><a href="#"><img src="img/phone-arrow.png"></a></div>
+              <div class="zakaz"><a href="#" data-toggle="modal" data-target="#myModal2"><img src="img/phone-arrow.png"></a></div>
               <div class="tel-head"><span class="tel-1">+7 (495)</span> <span class="tel-2">999-88-77</span></div>
             </div>
           
