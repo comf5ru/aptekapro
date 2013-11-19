@@ -478,17 +478,13 @@ background-color: transparent;
 }
 
 
-.tovari {
-    
-}
-
 .tovarcol{
 
 }
 
 .contant {
     /*background:#e4f8f9;*/
-    padding-bottom:60px;
+    padding-bottom:15px;
 }
 .menu-footer{
    /* background:url(../img/menu-background.jpg)repeat-x; */
@@ -655,6 +651,8 @@ input[type=search] {
     font-size: 18px;
     margin:10px auto 6px auto;
   }
+
+ /*рубль*/ 
 .price:after{
     content:"";
     display:inline-block;
@@ -665,6 +663,45 @@ input[type=search] {
     background-size:100% 100%;
 
 }
+@font-face {
+  font-family: 'ALSRubl-Tahoma';
+  src: url('../fonts/alsrubl-tahoma-regular.eot');
+  src: url('../fonts/alsrubl-tahoma-regular.eot?#iefix') format('embedded-opentype'),url('../fonts/alsrubl-tahoma-regular.woff') format('woff'), url('../fonts/alsrubl-tahoma-regular.ttf') format('truetype'), url('../fonts/alsrubl-tahoma-regular.svg#ALSRublTahomaItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ALSRubl-Tahoma';
+  src: url('../fonts/alsrubl-tahoma-bold.eot');
+  src: url('../fonts/alsrubl-tahoma-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/alsrubl-tahoma-bold.woff') format('woff'), url('../fonts/alsrubl-tahoma-bold.ttf') format('truetype'), url('../fonts/alsrubl-tahoma-bold.svg#ALSRublTahomaItalic') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+.cart-price{
+    font-family: 'ALSRubl-Tahoma', Tahoma, sans-serif;
+    font-size:13px;
+    color: #444;
+    font-weight: normal;
+}
+
+.old-price{
+   font-family: 'ALSRubl-Tahoma', Tahoma, sans-serif;
+    font-size:13px;
+    color: #999;
+    font-weight: normal;
+    text-decoration: line-through;
+}
+
+
+.cart tbody span.amount{
+    font-family: 'ALSRubl-Tahoma', Tahoma, sans-serif;
+    font-size:18px;
+    color: #444;
+    font-weight: normal;
+}
+/*рубль*/
+
 .skidki-price {
   font-family: 'PT Sans', serif;
   font-size: 11px;
@@ -1484,3 +1521,244 @@ color: #999;
   border: 1px solid #ccc;
 }
 /*контакты*/
+
+
+/*корзина*/
+/*.table{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    border-collapse: inherit;
+}*/
+
+ tr.inform_products{
+     height: 40px;
+     background: #e4f8f9;
+     color:#129ba1;
+     font-family: Tahoma;
+     font-size: 11px;
+     font-weight:bold;
+     border-bottom: 1px solid #cce0e1;
+     margin-left:10px;
+    
+ }
+
+.table .inform_products td{
+     padding-top: 13px;
+     height: 40px;
+     padding-left: 15px;
+     padding-right: 0px;
+ }
+
+ .cart {
+    border-radius: 5px;
+    border: 1px solid #cfe0e1;
+    overflow: hidden;
+    background: white;
+}
+.cart thead{
+    background: #e4f8f9;
+}
+.cart .table thead>tr>td{
+    color:#129ba1;
+    font-weight:bold;
+}
+.cart thead  .pricemain,
+.cart thead .item-count,
+.cart thead .price,
+.cart thead .amount {
+    border-left: 1px solid #cddfe0;
+    padding-left: 20px;
+}
+
+.cart .table tbody>tr>td{
+    vertical-align: middle;
+    padding-left: 20px;
+}
+.cart .table tbody>tr>td:last-child{
+    padding-left: 8px;
+}
+.cart .old-price{
+    text-decoration:line-through;
+}
+
+.cart .count{
+    padding-left: 10px;
+}
+.cart .count span{
+    display: inline-block;
+    margin:0 5px;
+    height: 18px;
+    width: 18px;
+    opacity:0.4;
+    vertical-align: middle;
+}
+.cart .count span:hover{
+   opacity:1;
+}
+.cart .count .inc-count{
+    background: url('../img/plus.png') center no-repeat;
+    cursor: pointer;
+}
+.cart .count .dec-count{
+    background: url('../img/minus.png') center no-repeat;
+    cursor: pointer;
+}
+.cart .del-items{
+    background: url('../img/del.png') center no-repeat;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    opacity: 0.4;
+    margin-right: 0;
+    cursor: pointer;
+}
+.cart .del-items:hover{
+    opacity: 1;
+}
+.cart-actions{
+    margin: 15px 20px;
+    float: left;
+}
+.cart-footer{
+    overflow: hidden;
+    margin:0 10px 15px;
+}
+.cart-action a{
+    color:#ff5854;
+    text-decoration: underline;
+    float: left;
+    font-size: 13px;
+}
+.cart-total {
+    float: right;
+    clear: none;
+    padding-bottom: 38px;
+}
+.cart-total label{
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+}
+.cart-total .inline{
+    float: left;
+    margin-right:5px;
+}
+.cart-total .total-amount{
+    font-family: 'ALSRubl-Tahoma', Tahoma, sans-serif;
+    font-size:18px;
+    color: #444;
+    font-weight: normal;
+}
+
+.dicsount-code{
+    float: left;
+    margin: 10px;
+}
+.table a{
+    color: #129ba1;
+    text-decoration: underline;
+    font-size: 13px;
+}
+.discount-item.text{
+    float:left;
+    font-size: 18px;
+    color: #129ba1;
+    padding-top: 10px;
+    padding-right: 5px;
+}
+.cart input[type="button"]{
+  color: #fff;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cad416), color-stop(1, #99ae0f) );
+  background:-moz-linear-gradient( center top, #cad416 5%, #99ae0f 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cad416', endColorstr='#99ae0f');
+  background-color:#cad416;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  padding: 8px 20px;
+  font-size:13px;
+}
+.cart-submit{
+    clear: right;
+    float: right;
+    padding:5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: rgb(229,229,229);
+    background: -moz-linear-gradient(top, rgba(229,229,229,1) 1%, rgba(248,248,248,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(229,229,229,1)), color-stop(100%,rgba(248,248,248,1)));
+    background: -webkit-linear-gradient(top, rgba(229,229,229,1) 1%,rgba(248,248,248,1) 100%);
+    background: -o-linear-gradient(top, rgba(229,229,229,1) 1%,rgba(248,248,248,1) 100%);
+    background: -ms-linear-gradient(top, rgba(229,229,229,1) 1%,rgba(248,248,248,1) 100%);
+    background: linear-gradient(to bottom, rgba(229,229,229,1) 1%,rgba(248,248,248,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#f8f8f8',GradientType=0 );
+}
+.cart-submit input{
+    border:1px solid #99ae0f;
+}
+.cart input:focus{
+    outline:none !important;
+}
+.cart .discount-item.code-form{
+   border-radius: 5px;
+   padding:5px;
+   float:left;
+   clear: none;
+  background: rgb(229,229,229);
+  background: -moz-linear-gradient(top, rgba(229,229,229,1) 1%, rgba(248,248,248,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(229,229,229,1)), color-stop(100%,rgba(248,248,248,1)));
+  background: -webkit-linear-gradient(top, rgba(229,229,229,1) 1%,rgba(248,248,248,1) 100%);
+  background: -o-linear-gradient(top, rgba(229,229,229,1) 1%,rgba(248,248,248,1) 100%);
+  background: -ms-linear-gradient(top, rgba(229,229,229,1) 1%,rgba(248,248,248,1) 100%);
+  background: linear-gradient(to bottom, rgba(229,229,229,1) 1%,rgba(248,248,248,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#f8f8f8',GradientType=0 );
+}
+.cart .discount-item.code-form input{
+    float: left;
+}
+.cart .discount-item.code-form input.recalc{
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #56d7db), color-stop(1, #16a2a7) );
+  background:-moz-linear-gradient( center top, #56d7db 5%, #16a2a7 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#56d7db', endColorstr='#16a2a7');
+  background-color:#56d7db;
+  border:1px solid #129ba1;
+}
+.code-form input.recalc{
+    padding:8px 10px;
+
+}
+
+
+.cart .discount-item.code-form input.code{
+    padding: 0px 5px 0;
+    border:1px solid #56d7db;
+    outline: 0;
+    height: 30px;
+    font-size: 18px;
+    width: 212px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.cart .cancel{
+    float: left;
+    padding-top: 15px;
+    padding-left: 27px;
+    font-size: 13px;
+}
+.cart .cancel a{
+    color:#ff5854;
+    text-decoration: underline;
+}
+
+.tovari3 .col-lg-2 {
+  width: 16.6%;
+}
+
+
+.cart .wavy-line {
+width: 100%;
+height: 40px;
+display: block;
+background: url(../img/wavy-line.png) bottom repeat-x;
+}
