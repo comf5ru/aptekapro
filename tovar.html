@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apteka.Pro</title>
+  <link  rel="stylesheet" href="css/bootstrap.min.css" media="all">
+  <link  rel="stylesheet" href="css/style.css" media="all">
+  <link  rel="stylesheet" href="css/tovar.css" media="all">
+  <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" />
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/bootstrap.min.js"> </script>
+  <script src="js/script.js"></script>
+
+</head>
+  
+<body>
+<!-- Шапка-->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content blueshadow">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <ul class="registertabs">
+          <li class="active"><a href="#home" data-toggle="tab">Вход</a></li>
+          <li><a href="#profile" data-toggle="tab">Регистрация</a></li>
+        </ul>
+        <div class="wavy-line-dark"></div>
+        <!-- Tab panes -->
+        <div class="container">
+          <div class="tab-content">
+            <div class="tab-pane active" id="home">
+              <form id="inputform">
+                <label>E-mail <span>*</span></label>
+                <input name="email" type="text">
+                <label>Пароль <span>*</span></label>
+                <input name="pass1" type="text">
+                <div class="row savemi">
+                  <div class="col-md-6 ">
+                    <label for="savemi" class="savemilabel"><input type="checkbox" id="savemi"> Запомнить меня</label>
+                  </div>
+                  <div class="col-md-6 ">
+                    <a href="" class="float-rigth">Вспомнить пароль</a>
+                  </div>
+                </div>
+                <div>
+                  <strong>Войти как пользователь </strong><img src="img/t.png" class="icon"><img src="img/v.png" class="icon"><img src="img/f.png" class="icon">
+                </div>
+                <br>
+                <p>Если вы зарегистрированы на одном из этих сайтов, или у вас есть учетная запись OpenID, вы можете войти используя имеющийся аккаунт.</p>
+                <p>Для этого выберите сайт и следуйте инструкциям.</p>
+                <div class="darkbg">
+                <button class="green">Зарегистрироваться</button>
+                </div>
+              </form>
+            </div>
+            <div class="tab-pane" id="profile">
+              <form id="inputform">
+              <label>ФИО <span>*</span></label>
+              <input name="fio" type="text">
+              <label>Мобильный телефон <span>*</span></label>
+              <input name="phone" type="text">
+              <label>E-mail <span>*</span></label>
+              <input name="email" type="text">
+              <label>Пароль <span>*</span></label>
+              <input name="pass1" type="text">
+              <label>Пароль повторно <span>*</span></label>
+              <input name="pass2" type="text">
+              <div class="darkbg">
+              <button class="green">Войти</button>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Modal 2-->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content blueshadow">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <ul class="registertabs">
+          <li class="active"><a href="#callme" data-toggle="tab">Обратный звонок</a></li>
+        </ul>
+        <div class="wavy-line-dark"></div>
+        <!-- Tab panes -->
+        <div class="container">
+          <div class="tab-content">
+          <div class="tab-pane active" id="callme">
+              <form id="inputform">
+              <label>Имя <span>*</span></label>
+              <input name="fio" type="text">
+              <label>Телефон <span>*</span></label>
+              <input name="phone" type="text">
+              <div class="darkbg">
+              <button class="green">Жду звонка</button>
+              </div>
+              </form>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal 2-->
+
+
+  <header  class="headd">
+    <div class="zalivka">
+      <div class="container">
+        <div class="row"><!-- Навигация-->
+          <div class="col-md-8">
+             <ul class="nav simplemenu nav-tabs">
+              <li class="right-border">
+              <a href="#">Главная </a>
+              </li> 
+              <li class="left-border"><a href="#">О компании</a></li>
+              <li class="left-border"><a href="#">Новости</a></li>
+              <li class="left-border"><a href="#">Покупателям</a></li>
+              <li class="left-border"><a href="#">Статьи</a></li>
+              <li class="left-border"><a href="#">Контактная информация</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 menu-author">
+            <ul class="slemenu paddmenu container">
+              <li>
+              <a href="#" data-toggle="modal" data-target="#myModal"><img src="img/key.png" class="icon">Вход</a>
+              </li>
+              <li><a href="#"><img src="img/korzina.png" class="icon">Корзина</a><span>(20)</span></li>
+              <li><a href="#">Отложено</a><span>(4)</span></li>
+            </ul>
+          </div>
+        </div>  <!-- end row--> 
+      </div><!--End Навигация -->
+    </div>
+    <div class="bottomshadow container">
+    </div>
+        <div class="container">
+          <div class="container">
+             <div class="col-md-offset-3 col-md-9">
+               <div class="row">
+               <div class="vipod blueshadow">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="row">
+                          <a href="#">Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия</a>
+                        </div>
+                      </div>
+                      <div class="col-md-4">Инфекционно-воспалительные заболевания верхних дыхательных путей у взрослых и детей</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="row">
+                        <a href="#">Батончик шоколадный  ооо rus-россия</a>
+                      </div>
+                      </div>
+                      <div class="col-md-4">Инфекционно взрослых</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="row">
+                        <a href="#">Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия</a>
+                        </div>
+                      </div>
+                      <div class="col-md-4">Инфекционно путей у взрослых и детей</div>
+                    </div>
+                  </div>
+               </div>
+               </div>
+             </div>
+         </div>
+          <div class="container"><!-- logo search-->
+
+
+            <div class="col-md-2 col-lg-2">
+              <div class="logotip"><a href="#"><img src="img/logo.png"></a></div>
+            </div>
+            <div class="col-md-offset-1 col-md-4 col-lg-5">
+              <div class="poisk">
+                <form action="" placeholder="Search" class="form-search" name="search">
+                   <input type="search" class="input-medium poisk-head" placeholder="Поиск">
+                </form>
+              </div>
+            </div>
+            <div class="col-md-5 col-lg-4">
+              <div class="zakaz"><a href="#" data-toggle="modal" data-target="#myModal2"><img src="img/phone-arrow.png"></a></div>
+              <div class="tel-head"><span class="tel-1">+7 (495)</span> <span class="tel-2">999-88-77</span></div>
+            </div>
+          
+          
+          </div><!-- end row-->
+        </div><!--end container-->
+        
+        <div class="container">
+          <div class="container nav-2">
+            <div class="col-md-12 navigation">
+            <div class="menuborder">
+              <ul class="nav nav-tabs menu-footer">
+                  <li id="catalog"><a href="#"><img src="img/katalog.png"></a></li>
+                <li class="first">
+                <a href="#">Лекарственные</br> препараты</a>
+                </li>
+                <li><a href="#">Здоровое </br>питание</a></li>
+                <li><a href="#">Витамины </br>и БАДы</a></li>
+                <li ><a href="#">Народные</br> средства</a></li>
+                <li ><a href="#">Медицинская</br> техника</a></li>
+                <li><a href="#">Уход за </br>больными</a></li>
+                <li><a href="#">Первая </br>помощь</a></li>
+                <li><a href="#">Красота</br>и здоровье</a></li>
+                <li><a href="#">Лечебная </br>косметика</a></li>
+                <li><a href="#">Красота</br>и здоровье</a></li>
+                <li class="last"><a href="#">Лечебная </br>косметика</a></li>
+                
+              </ul>
+            </div>
+            </div>
+          </div><!-- end row-->
+        
+        
+        </div><!--end container-->
+        <div class="bottomshadow container">
+        </div>
+         <div class="container"><div class="col-md-12 col-lg-12">
+          <div class="history">
+          <ul class="breadcrumb">
+            <li><a href="#" class="main-pg">Главная</a></li>
+            <li class="active"><a href="#">Корзина</a></li>
+          </ul>
+        </div>
+      </div><!--end container-->
+      <div class="container">
+        <!--div class="blocktitle" ><div class="tov">Корзина</div><div class="wavy-line"></div></div-->
+      </div>
+    </div>
+
+    </header>
+
+      <div class="container">
+      <div class="row contant " >
+        <div class="col-md-12 col-lg-12">
+			<div class="col-md-9 col-lg-9 float-right">
+			<div class="container">
+				<div class="row round-block img-rounded item">
+				
+				<div class="col-md-6 col-lg-6">
+					<a href="#" class="itemimg">
+				   <img src="img/komplivittovar.jpg">
+				   </a>
+				</div>	
+				<div class="col-md-6 col-lg-6">
+				
+					<div class="item">
+					<div class="itemtitle lider">
+						Компливит кальций д3 в таблетках, 30 шт.
+					</div>
+					<div class="itemcharac">
+						<span>Торговая марка:</span> Running River </br>
+						<span>Артикул товара:</span> 1003916 </br>
+						<span>Болезнь/симптом:</span> простуда, жар, боль в горле
+					</div>
+					<div class="itemdecript">
+						<div class="decripthead">Краткое описание:</div>					
+Компливит Кальций Д3 Форте (мятный) - комбинированный препарат, действие которого обусловлено входящими в его состав компонентами. Компливит кальций Д3 регулирует обмен кальция и фосфатов, снижает резорбцию и увеличивает плотность костной ткани, восполняет недостаток кальция и витамина Д3 в организме, 
+						
+					</div>
+					
+					<div class="price">12 560.00</div>
+					
+					<div class="row counttov">
+					
+					<div class="greenbg">
+					<form class="finp">
+					<input type="text" size="4" class="iteminp" value="1">
+					</form>
+					
+
+                    <button class="green">
+						<div class="korzina-btn"><img src="img/korzina.png"></div>
+                        <div class="price-btn">Купить</div>
+                    </button>
+                    </div>
+					
+					<div class="opt">
+						<a href="#" class="buynow">Купить в один клик!</a>
+						</a>
+						<a href="#" class="itemhref">Отложить</a>
+					</div>
+					
+					</div>
+					
+					<!--div class="opt">
+						<a href="#" class="buynow">Купить в один клик!</a>
+						<a href="#" class="itemhref">Отложить</a>
+					</div-->
+					
+					<div class="row exist">
+						<span class="pretext">Наличие: </span>
+						
+						<ul class="segment">
+						<li class="active"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						</ul>
+						
+						<div class="existcharact">Очень мало</div>
+						<a href="#" class="itemhref">Наличие на складах</a>
+					</div>
+					
+					</div>
+				</div>		
+				
+				</div>	
+				
+				<div class="row round-block img-rounded">
+				<div class="col-md-12 col-lg-12">
+			
+				<div class="fulldesc">
+					<div class="fulldesctitle"><span>Подробное</span> описание</div>
+					<div class="fulldesch">Форма выпуска, состав и упаковка</div>
+				<p>1 таблетка содержит кальций (в виде кальция карбоната - 1,250 г ) 500 мг, колекальциферол (Витамин Д3) 200 МЕ в виде гранулята содержащего: колекальциферол, бутилгидроскитолуол, сахароза, желатин, натрия алюмосиликат, триглицериды средней цепи, крахмал модифицированный, вода; вспомогательные вещества: молочный сахар (лактоза), поливинилпирролидон низкомолекудярный (повидон), крахмал картофельный, вивасол (кроскармеллоза натрия), лимонная кислота, аспартам, магния стеарат, ароматизатор апельсиновый (порошковый);
+колекальциферол, бутилгидроскитолуол, сахароза, желатин, натрия алюмосиликат, триглицериды средней цепи, крахмал модифицированный, вода; вспомогательные 
+				</p>
+				<div class="fulldesch">Фармакологическое действие</div>
+				<p>
+				1 таблетка содержит кальций (в виде кальция карбоната - 1,250 г ) 500 мг, колекальциферол (Витамин Д3) 200 МЕ в виде гранулята содержащего: колекальциферол, бутилгидроскитолуол, сахароза, желатин, натрия алюмосиликат, триглицериды средней цепи, крахмал модифицированный, вода; вспомогательные вещества: молочный сахар (лактоза), поливинилпирролидон низкомолекудярный (повидон), крахмал картофельный, вивасол (кроскармеллоза натрия), лимонная кислота, аспартам, магния стеарат, ароматизатор апельсиновый (порошковый); колекальциферол, бутилгидроскитолуол, сахароза, желатин, натрия алюмосиликат, триглицериды средней цепи, крахмал модифицированный, вода; вспомогательные 
+				</p>
+				<div class="fulldesch">Клинико-фармакологическая группа</div>
+				<p>
+				Компливит Кальций Д3 Форте (мятный) - комбинированный препарат, действие которого обусловлено входящими в его состав компонентами. Компливит кальций Д3 регулирует обмен кальция и фосфатов, снижает резорбцию и увеличивает плотность костной ткани, восполняет недостаток кальция и витамина Д3 в организме, усиливает всасывание кальция в кишечнике и реабсорбцию фосфатов в почках, способствует минерализации костей. Кальций - участвует в формировании костной ткани, 
+				</p>
+				<div class="fulldesch">Лекарственное взаимодействие</div>
+				<p>
+				1 таблетка содержит кальций (в виде кальция карбоната - 1,250 г ) 500 мг, колекальциферол (Витамин Д3) 200 МЕ в виде гранулята содержащего: колекальциферол, бутилгидроскитолуол, сахароза, желатин, натрия алюмосиликат, триглицериды средней цепи, крахмал модифицированный, вода; вспомогательные вещества: молочный сахар (лактоза), поливинилпирролидон низкомолекудярный (повидон), крахмал картофельный, вивасол (кроскармеллоза натрия), лимонная кислота, аспартам, магния стеарат, ароматизатор апельсиновый (порошковый);
+				</p>
+				<a href="#" class="instruction">Скачать инструкцию</a>
+				</div>
+				</div>
+				</div>
+				<div class="row round-block img-rounded">
+				<div class="col-md-12 col-lg-12">
+					<div class="row comhead">
+					
+					<div class="fulldesctitle comment"><span>Отзывы</span> покупателей</div>
+					<div class="countcomments">(3)</div>
+					<a href="#" class="leavecom">Добавить отзыв</a>
+				
+					</div>
+					<ul class="comments">
+					<li class="row">
+					
+					<div class="col-md-3 col-lg-2">
+						<div class="commentauthor">Марина</div>
+						<div class="commentdate">28 сентября 2013</div>
+					</div>
+					<div class="col-md-9 col-lg-10">
+						<div class="commenttext">
+						Внутрь, разжевывают или глотают целиком. Дозы взрослым и детям старше 12 лет - по 1 таблетки 2 , утром и вечером, преимущественно во время еды, или индивидуально в зависимости от клинической картины. Внутрь, разжевывают или глотают целиком. Дозы взрослым и детям старше 12 лет - по 1 таблетки 2 
+						</div>
+					</div>
+					</li>
+					<li class="row">
+					<div class="col-md-3 col-lg-2">
+						<div class="commentauthor">Кочнева Марина</div>
+						<div class="commentdate">28 сентября 2013</div>
+					</div>
+					<div class="col-md-9 col-lg-10">
+						<div class="commenttext">
+						Внутрь, разжевывают или глотают целиком. Дозы взрослым и детям старше 12 лет - по 1 таблетки 2 , утром и вечером, преимущественно во время еды, или индивидуально в зависимости от клинической картины. Внутрь, разжевывают или глотают целиком. Дозы взрослым и детям старше 12 лет - по 1 таблетки 2 
+						</div>
+					</div>
+					</li>
+					<li class="row">
+					<div class="col-md-3 col-lg-2">
+						<div class="commentauthor">Кочнева Марина</div>
+						<div class="commentdate">28 сентября 2013</div>
+					</div>
+					<div class="col-md-9 col-lg-10">
+						<div class="commenttext">
+						Внутрь, разжевывают или глотают целиком. Дозы взрослым и детям старше 12 лет - по 1 таблетки 2 , утром и вечером, преимущественно во время еды, или индивидуально в зависимости от клинической картины. Внутрь, разжевывают или глотают целиком. Дозы взрослым и детям старше 12 лет - по 1 таблетки 2 
+						</div>
+					</div>
+					</li>
+					</ul>
+				</div>
+				</div>
+				
+				
+				<!--!!!!!!!!!!!!!!!!!!!-->
+				<div class="col-md-12 col-lg-12 float-right">
+				<div class="container product">
+					<div class="container">
+					<div class="blocktitle"><div class="tov">Сопутствующие <span>товары</span></div><div class="wavy-line"></div></div>
+					</div>
+					
+					<div class="row tovari content">
+					
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/st1.jpg">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                              <a href="#" class="ok-text">Мульти витамин экстра для женщин капсулы, 124 шт.</a>
+                              <div class="price">12 560.00</div>
+                              <div class="greenbg">
+                              <button class="green">
+                                <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                <div class="price-btn">Купить</div>
+                              </button>
+                              </div>
+                              <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+					
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/tovar2.png">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                            <a href="#" class="ok-text">"Энергетический тортик", 124 шт.</a>
+                            <div class="price">560.00</div>
+                            <div class="greenbg">
+                            <button class="green">
+                              <div class="korzina-btn"><img src="img/korzina.png"></div>
+                              <div class="price-btn">Купить</div>
+                            </button>
+                            </div>
+                            <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+					
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/tovar3.png">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                            <a href="#" class="ok-text">Рифуола эмуно капсулы, 124 шт.</a>
+                            <div class="price">560.00</div>
+                            <div class="greenbg">
+                            <button class="green">
+                              <div class="korzina-btn"><img src="img/korzina.png"></div>
+                              <div class="price-btn">Купить</div>
+                            </button>
+                            </div>
+                            <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+					
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/st1.jpg">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                              <a href="#" class="ok-text">Мульти витамин экстра для женщин капсулы, 124 шт.</a>
+                              <div class="price">12 560.00</div>
+                              <div class="greenbg">
+                              <button class="green">
+                                <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                <div class="price-btn">Купить</div>
+                              </button>
+                              </div>
+                              <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+					
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/tovar3.png">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                            <a href="#" class="ok-text">Рифуола эмуно капсулы, 124 шт.</a>
+                            <div class="price">560.00</div>
+                            <div class="greenbg">
+                            <button class="green">
+                              <div class="korzina-btn"><img src="img/korzina.png"></div>
+                              <div class="price-btn">Купить</div>
+                            </button>
+                            </div>
+                            <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+					</div>
+				
+				</div>
+				
+				
+
+				</div>
+				
+				<!--!!!!!!!!!!!!!!!!!!!-->
+			</div>
+				
+			</div>
+			
+			<div class="col-md-3 col-lg-3">
+				<div class="container">
+					<div class="container">
+						<div class="sidetitle">Другие формы препарата</div>
+					</div>
+				<div class="container">
+				<div class="col-xs-6 col-sm-4 col-md-12 col-lg-12 minicard">
+                  <div class="row">
+                  <a href="/"><img src="img/skidki-logo.png"></a>
+                  <div class="skidki-text">
+                    <a href="/">Энергетический тортик</a>
+                    <a href="#" class="skidki-price">
+                      <span class="cost">12 560.00</span><span class="korz2"></span>
+                    </a>
+                  </div>
+                  </div>
+                </div>
+				<div class="col-xs-6 col-sm-4 col-md-12 col-lg-12 minicard">
+                  <div class="row">
+                    <a href="/"><img src="img/skidki-logo1.png"></a>
+                    <div class="skidki-text">
+                      <a href="/">Мульти витамин экстра для женщин капсулы</a>
+                      <a href="#" class="skidki-price">
+                        <span class="cost">560.00</span><span class="korz2"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+				<div class="col-xs-6 col-sm-4 col-md-12 col-lg-12 minicard">
+                  <div class="row">
+                  <a href="/"><img src="img/skidki-logo.png"></a>
+                  <div class="skidki-text">
+                    <a href="/">Энергетический тортик</a>
+                    <a href="#" class="skidki-price">
+                      <span class="cost">12 560.00</span><span class="korz2"></span>
+                    </a>
+                  </div>
+                  </div>
+                </div>
+				<div class="col-xs-6 col-sm-4 col-md-12 col-lg-12 minicard">
+                  <div class="row">
+                    <a href="/"><img src="img/skidki-logo1.png"></a>
+                    <div class="skidki-text">
+                      <a href="/">Мульти витамин экстра для женщин капсулы</a>
+                      <a href="#" class="skidki-price">
+                        <span class="cost">560.00</span><span class="korz2"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-12 col-lg-12">
+                  <div class="row">
+						<a href="#" class="all">Смотреть все</a>
+				  </div>
+                </div>
+				<!--/div>
+				
+				
+				
+				<div class="container"-->
+					<div class="container">
+						<div class="sidetitle">Аналоги</div>
+					</div>
+					<div class="container sidebaritem">
+				<div class="col-xs-6 col-sm-4 col-md-12 col-lg-12 minicard">
+                  <div class="row">
+                  <a href="/"><img src="img/skidki-logo.png"></a>
+                  <div class="skidki-text">
+                    <a href="/">Энергетический тортик</a>
+                    <a href="#" class="skidki-price">
+                      <span class="cost">12 560.00</span><span class="korz2"></span>
+                    </a>
+                  </div>
+                  </div>
+                </div>
+				<div class="col-xs-6 col-sm-4 col-md-12 col-lg-12 minicard">
+                  <div class="row">
+                    <a href="/"><img src="img/skidki-logo1.png"></a>
+                    <div class="skidki-text">
+                      <a href="/">Мульти витамин экстра для женщин капсулы</a>
+                      <a href="#" class="skidki-price">
+                        <span class="cost">560.00</span><span class="korz2"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+				<div class="col-xs-6 col-sm-4 col-md-12 col-lg-12 minicard">
+                  <div class="row">
+                  <a href="/"><img src="img/skidki-logo.png"></a>
+                  <div class="skidki-text">
+                    <a href="/">Энергетический тортик</a>
+                    <a href="#" class="skidki-price">
+                      <span class="cost">12 560.00</span><span class="korz2"></span>
+                    </a>
+                  </div>
+                  </div>
+                </div>
+				<div class="col-xs-6 col-sm-4 col-md-12 col-lg-12 minicard">
+                  <div class="row">
+                    <a href="/"><img src="img/skidki-logo1.png"></a>
+                    <div class="skidki-text">
+                      <a href="/">Мульти витамин экстра для женщин капсулы</a>
+                      <a href="#" class="skidki-price">
+                        <span class="cost">560.00</span><span class="korz2"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+				<div class="col-xs-6 col-sm-4 col-md-12 col-lg-12 minicard">
+                  <div class="row">
+                  <a href="/"><img src="img/skidki-logo.png"></a>
+                  <div class="skidki-text">
+                    <a href="/">Энергетический тортик</a>
+                    <a href="#" class="skidki-price">
+                      <span class="cost">12 560.00</span><span class="korz2"></span>
+                    </a>
+                  </div>
+                  </div>
+                </div>
+				<div class="col-xs-6 col-sm-4 col-md-12 col-lg-12 minicard">
+                  <div class="row">
+                    <a href="/"><img src="img/skidki-logo1.png"></a>
+                    <div class="skidki-text">
+                      <a href="/">Мульти витамин экстра для женщин капсулы</a>
+                      <a href="#" class="skidki-price">
+                        <span class="cost">560.00</span><span class="korz2"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+				<div class="col-xs-6 col-sm-4 col-md-12 col-lg-12 minicard">
+					<div class="row">
+					<a href="/"><img src="img/skidki-logo.png"></a>
+					<div class="skidki-text">
+                    <a href="/">Энергетический тортик</a>
+                    <a href="#" class="skidki-price">
+                      <span class="cost">12 560.00</span><span class="korz2"></span>
+                    </a>
+					</div>
+					</div>
+					</div>
+                </div>
+				
+				
+				<div class="col-xs-6 col-sm-4 col-md-12 col-lg-12">
+                  <div class="row">
+						<a href="#" class="all">Смотреть все</a>
+						<div class="wavy-line"></div>
+				  </div>
+                </div>
+			
+				</div>
+				
+				
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="row">
+						<div class="container">
+						<div class="sidetitle">Советы врача</div>
+						</div>
+						<div class="container">
+						<div class="advicecontent">
+						1 таблетка содержит кальций (в виде кальция карбоната - 1,250 г ) 500 мг, колекальциферол (Витамин Д3) 200 МЕ в виде гранулята содержащего: колекальциферол, бутилгидроскитолуол, сахароза, желатин, натрия алюмосиликат, триглицериды средней цепи, крахмал модифицированный, вода; вспомогательные вещества: молочный сахар 
+						</div>
+						</div>
+				  </div>
+                </div>
+				
+				<div class="greenbg">
+				<button class="green">
+                    <div class="price-btn">Задать вопрос врачу</div>
+                </button>
+				</div>
+				
+			</div>
+			</div>
+		
+          
+      </div>
+    </div>
+  </div>
+        
+
+      
+<footer class="myfooter">    
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-lg-2 marg-top">
+              <img src="img/logo-footer.png">
+          </div>  
+          <div class="col-md-offset-1 col-md-6 col-lg-offset-1 col-lg-5 marg-top">
+            <div class="poisk">
+              <form class="form-search">
+                 <input type="search" class="input-medium poisk-footer" placeholder="Поиск">
+                 
+              </form>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-offset-2 col-lg-2 tel-footer">
+            <div class="tel-head-2"><span class="tel-1">+7 (495)</span> <span class="tel-2">999-88-77</span></div>
+          </div>
+        </div><!-- end row--> 
+        <div class="row">
+          <div class="col-md-1 col-lg-1 directfooter">
+            <img src="img/reiting.png">
+          </div>
+          <div class="col-md-2 col-lg-2 text-footer">
+            <span>&copy; 2013 &laquo;Apteka.Pro&raquo;</span></br>
+            <span class="mail"> aptekapro@gmail.com</span>
+          </div>
+          <div class="col-md-6 col-lg-5">
+            <ul class="nav simplemenu nav-tabs">
+            <ul class="nav simplemenu nav-tabs">
+                <li class="right-border">
+                <a href="#">Главная</a>
+                </li>
+                <li class="left-border"><a href="#">О компании</a></li>
+                <li class="left-border"><a href="#">Новости</a></li>
+                <li class="left-border"><a href="#">Покупателям</a></li>
+                <li class="left-border"><a href="#">Статьи</a></li>
+                <li class="left-border"><a href="#" >Контактная информация</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-lg-2 ok">
+            <img src="img/ok.png"><a href="#">разработка сайта и создание</a>
+          </div>
+        </div><!-- end row-->
+      </div><!-- end container-->
+    </footer><!-- end footer-->  
+  </div>
+  
+  </body>
+</html>
