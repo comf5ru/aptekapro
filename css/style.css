@@ -2194,6 +2194,7 @@ p.text-licc{
     color: #444;
     font-family: Tahoma;
     font-size: 11px;
+    max-width: 94%;
 }
 
 .pad{
@@ -3137,3 +3138,9 @@ color:#444;
 margin-right: 11px;
 }
 /*товар*/
+
+
+.blocktitle{
+    margin-top:10px;
+    margin-bottom:10px;
+}
