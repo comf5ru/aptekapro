@@ -11,6 +11,12 @@
   <script src="js/bootstrap.min.js"> </script>
   <script src="js/script.js"></script>
 
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script src="js/scriptcost.js"></script>
+  <script src="js/scriptblockstring.js"></script>
+
+
 </head>
   
 <body>
@@ -279,16 +285,42 @@
                 </div>
                 <div class="wavy-line"></div>
                 <div class="col-xs-6 col-sm-4 col-md-12 col-lg-12 cena">
-                 <div class="tov2">Бренд</div>
+                 <div class="tov2">Бренд<a href="#">Сбросить</a></div>
+
                  <form action="" placeholder="Search" class="form-search" name="search">
                    <input type="search" class="input-medium poisk-head">
                 </form>
+                <div class="seaarch">
+                <li><input type="checkbox" id="checkbox1"/><label for="checkbox1">COLUMBIA</label></li>
+                <li><input type="checkbox" id="checkbox2"/><label for="checkbox2">converse</label></li>
+                <li><input type="checkbox" id="checkbox3"/><label for="checkbox3">cooper</label></li>
+                <li><input type="checkbox" id="checkbox4"/><label for="checkbox4">corvari</label></li>
+                <li><input type="checkbox" id="checkbox5"/><label for="checkbox5">covani</label></li>
+                <li><input type="checkbox" id="checkbox6"/><label for="checkbox6">crosby</label></li>
+                <li><input type="checkbox" id="checkbox7"/><label for="checkbox7">DC shoes</label></li>
+                <li><input type="checkbox" id="checkbox8"/><label for="checkbox8">DV by dolce vita</label></li>
+                <li><input type="checkbox" id="checkbox9"/><label for="checkbox9">daze</label></li>
+                <li><input type="checkbox" id="checkbox10"/><label for="checkbox10">de fonseca</label></li>
+                <li><input type="checkbox" id="checkbox1"/><label for="checkbox1">COLUMBIA</label></li>
+                <li><input type="checkbox" id="checkbox2"/><label for="checkbox2">converse</label></li>
+                <li><input type="checkbox" id="checkbox3"/><label for="checkbox3">cooper</label></li>
+                <li><input type="checkbox" id="checkbox4"/><label for="checkbox4">corvari</label></li>
+                <li><input type="checkbox" id="checkbox5"/><label for="checkbox5">covani</label></li>
+                <li><input type="checkbox" id="checkbox6"/><label for="checkbox6">crosby</label></li>
+                <li><input type="checkbox" id="checkbox7"/><label for="checkbox7">DC shoes</label></li>
+                <li><input type="checkbox" id="checkbox8"/><label for="checkbox8">DV by dolce vita</label></li>
+                <li><input type="checkbox" id="checkbox9"/><label for="checkbox9">daze</label></li>
+                <li><input type="checkbox" id="checkbox10"/><label for="checkbox10">de fonseca</label></li>
+                </div>
                 </div>
                <div class="wavy-line"></div>
                 
                 
                 <div class="col-xs-6 col-sm-4 col-md-12 col-lg-12 cena">
-                 <div class="tov2">Цена</div>
+                 <div class="tov2">Цена</div><div id="minUP"></div><div id="maxUP"></div>
+                 <div id="slider-range"></div>
+                 <p class="slider-range-size"><label for="minCost"></label><input type="text" id="minCost"/>
+                 <label for="maxCost"></label><input type="text" id="maxCost"/></p>
                 </div>
                 <div class="wavy-line"></div>
                 </div>
@@ -297,19 +329,621 @@
                </div>
 
 
+               <div class="col-md-10 col-lg-10 float-rigth">
+                <div class="container">
+                  <div class="titlekatalog">Витамины и БАДы (327)</div>
+                    <ul class="menucatalog">
+                      <div class="col-md-6 col-lg-6">
+                        <li><a href="#">Витамины и антиоксиданты</a></li>
+                        <ul>
+                        <li><a href="#">Витамины премиум-класса Солгар</a></li>
+                        <li><a href="#">Антиоксидантные комплесы</a></li>
+                        <li><a href="#">Витамины С</a></li>
+                        <li><a href="#">БАДы для органов пищеварения, печени и почек</a></li>
+                        <li><a href="#">Гепатопротекторы</a></li>
+                        <li><a href="#">Препараты для желудочно-кишечного</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6 col-lg-6">
+                        <li><a href="#">Похудение.Обмен веществ</a></li>
+                        <ul>
+                        <li><a href="#">Витамины премиум-класса Солгар</a></li>
+                        <li><a href="#">Антиоксидантные комплесы</a></li>
+                        <li><a href="#">Витамины С</a></li>
+                        <li><a href="#">БАДы для органов пищеварения, печени и почек</a></li>
+                        <li><a href="#">Гепатопротекторы</a></li>
+                        <li><a href="#">Препараты для желудочно-кишечного</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6 col-lg-6">
+                        <li><a href="#">Лечение заболеваний ЖКТ ипечени</a></li>
+                        <ul>
+                        <li><a href="#">Витамины премиум-класса Солгар</a></li>
+                        <li><a href="#">Антиоксидантные комплесы</a></li>
+                        <li><a href="#">Витамины С</a></li>
+                        <li><a href="#">БАДы для органов пищеварения, печени и почек</a></li>
+                        <li><a href="#">Гепатопротекторы</a></li>
+                        <li><a href="#">Препараты для желудочно-кишечного</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6 col-lg-6">
+                        <li><a href="#">Витамины и антиоксиданты</a></li>
+                        <ul>
+                        <li><a href="#">Витамины премиум-класса Солгар</a></li>
+                        <li><a href="#">Антиоксидантные комплесы</a></li>
+                        <li><a href="#">Витамины С</a></li>
+                        <li><a href="#">БАДы для органов пищеварения, печени и почек</a></li>
+                        <li><a href="#">Гепатопротекторы</a></li>
+                        <li><a href="#">Препараты для желудочно-кишечного</a></li>
+                        </ul>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                        <li><a href="#">Похудение.Обмен веществ</a></li>
+                        <ul>
+                        <li><a href="#">Витамины премиум-класса Солгар</a></li>
+                        <li><a href="#">Антиоксидантные комплесы</a></li>
+                        <li><a href="#">Витамины С</a></li>
+                        <li><a href="#">БАДы для органов пищеварения, печени и почек</a></li>
+                        <li><a href="#">Гепатопротекторы</a></li>
+                        <li><a href="#">Препараты для желудочно-кишечного</a></li>
+                        </ul>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                        <li><a href="#">Лечение заболеваний ЖКТ ипечени</a></li>
+                        <ul>
+                        <li><a href="#">Витамины премиум-класса Солгар</a></li>
+                        <li><a href="#">Антиоксидантные комплесы</a></li>
+                        <li><a href="#">Витамины С</a></li>
+                        <li><a href="#">БАДы для органов пищеварения, печени и почек</a></li>
+                        <li><a href="#">Гепатопротекторы</a></li>
+                        <li><a href="#">Препараты для желудочно-кишечного</a></li>
+                        </ul>
+                      </div>
+                       </ul></div>
+
+                    <div class="col-md-12 col-lg-12 sortirovka">
+                      <ul class="left">Сортировать: <li><a href="#">По цене</a></li> <li><a href="#">наличию</a></li> <li><a href="#">производителю</a></li> <li><a href="#">названию</a></li></ul> <ul class="right">Отображать: <li class="active"><a id="style1"  href="#">Блоками</a></li> <li><a id="style2" href="#">Списком</a></li></ul></div>
+
+                      <div class="block">
+                      <div class="container">
+
+      
+                    <div class="row tovari content">
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/tovar1.png">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                              <a href="#" class="ok-text">Мульти витамин экстра для женщин капсулы, 124 шт.</a>
+                              <div class="price">560.00</div>
+                              <div class="greenbg">
+                              <button class="green">
+                                <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                <div class="price-btn">Купить</div>
+                              </button>
+                              </div>
+                              <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/tovar2.png">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                            <a href="#" class="ok-text">"Энергетический тортик", 124 шт.</a>
+                            <div class="price">560.00</div>
+                            <div class="greenbg">
+                            <button class="green">
+                              <div class="korzina-btn"><img src="img/korzina.png"></div>
+                              <div class="price-btn">Купить</div>
+                            </button>
+                            </div>
+                            <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/tovar3.png">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                            <a href="#" class="ok-text">Рифуола эмуно чтото там, 124 шт.</a>
+                            <div class="price">560.00</div>
+                            <div class="greenbg">
+                            <button class="green">
+                              <div class="korzina-btn"><img src="img/korzina.png"></div>
+                              <div class="price-btn">Купить</div>
+                            </button>
+                            </div>
+                            <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/tovar1.png">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                              <a href="#" class="ok-text">Мульти витамин экстра для женщин капсулы, 124 шт.</a>
+                              <div class="price">560.00</div>
+                              <div class="greenbg">
+                              <button class="green">
+                                <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                <div class="price-btn">Купить</div>
+                              </button>
+                              </div>
+                              <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/tovar2.png">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                            <a href="#" class="ok-text">"Энергетический тортик", 124 шт.</a>
+                            <div class="price">560.00</div>
+                            <div class="greenbg">
+                            <button class="green">
+                              <div class="korzina-btn"><img src="img/korzina.png"></div>
+                              <div class="price-btn">Купить</div>
+                            </button>
+                            </div>
+                            <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/tovar1.png">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                              <a href="#" class="ok-text">Мульти витамин экстра для женщин капсулы, 124 шт.</a>
+                              <div class="price">560.00</div>
+                              <div class="greenbg">
+                              <button class="green">
+                                <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                <div class="price-btn">Купить</div>
+                              </button>
+                              </div>
+                              <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/tovar2.png">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                            <a href="#" class="ok-text">"Энергетический тортик", 124 шт.</a>
+                            <div class="price">560.00</div>
+                            <div class="greenbg">
+                            <button class="green">
+                              <div class="korzina-btn"><img src="img/korzina.png"></div>
+                              <div class="price-btn">Купить</div>
+                            </button>
+                            </div>
+                            <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/tovar3.png">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                            <a href="#" class="ok-text">Рифуола эмуно чтото там, 124 шт.</a>
+                            <div class="price">560.00</div>
+                            <div class="greenbg">
+                            <button class="green">
+                              <div class="korzina-btn"><img src="img/korzina.png"></div>
+                              <div class="price-btn">Купить</div>
+                            </button>
+                            </div>
+                            <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/tovar1.png">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                              <a href="#" class="ok-text">Мульти витамин экстра для женщин капсулы, 124 шт.</a>
+                              <div class="price">560.00</div>
+                              <div class="greenbg">
+                              <button class="green">
+                                <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                <div class="price-btn">Купить</div>
+                              </button>
+                              </div>
+                              <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/tovar2.png">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                            <a href="#" class="ok-text">"Энергетический тортик", 124 шт.</a>
+                            <div class="price">560.00</div>
+                            <div class="greenbg">
+                            <button class="green">
+                              <div class="korzina-btn"><img src="img/korzina.png"></div>
+                              <div class="price-btn">Купить</div>
+                            </button>
+                            </div>
+                            <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/tovar1.png">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                              <a href="#" class="ok-text">Мульти витамин экстра для женщин капсулы, 124 шт.</a>
+                              <div class="price">560.00</div>
+                              <div class="greenbg">
+                              <button class="green">
+                                <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                <div class="price-btn">Купить</div>
+                              </button>
+                              </div>
+                              <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/tovar2.png">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                            <a href="#" class="ok-text">"Энергетический тортик", 124 шт.</a>
+                            <div class="price">560.00</div>
+                            <div class="greenbg">
+                            <button class="green">
+                              <div class="korzina-btn"><img src="img/korzina.png"></div>
+                              <div class="price-btn">Купить</div>
+                            </button>
+                            </div>
+                            <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/tovar3.png">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                            <a href="#" class="ok-text">Рифуола эмуно чтото там, 124 шт.</a>
+                            <div class="price">560.00</div>
+                            <div class="greenbg">
+                            <button class="green">
+                              <div class="korzina-btn"><img src="img/korzina.png"></div>
+                              <div class="price-btn">Купить</div>
+                            </button>
+                            </div>
+                            <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/tovar1.png">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                              <a href="#" class="ok-text">Мульти витамин экстра для женщин капсулы, 124 шт.</a>
+                              <div class="price">560.00</div>
+                              <div class="greenbg">
+                              <button class="green">
+                                <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                <div class="price-btn">Купить</div>
+                              </button>
+                              </div>
+                              <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/tovar2.png">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                            <a href="#" class="ok-text">"Энергетический тортик", 124 шт.</a>
+                            <div class="price">560.00</div>
+                            <div class="greenbg">
+                            <button class="green">
+                              <div class="korzina-btn"><img src="img/korzina.png"></div>
+                              <div class="price-btn">Купить</div>
+                            </button>
+                            </div>
+                            <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/tovar1.png">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                              <a href="#" class="ok-text">Мульти витамин экстра для женщин капсулы, 124 шт.</a>
+                              <div class="price">560.00</div>
+                              <div class="greenbg">
+                              <button class="green">
+                                <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                <div class="price-btn">Купить</div>
+                              </button>
+                              </div>
+                              <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/tovar2.png">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                            <a href="#" class="ok-text">"Энергетический тортик", 124 шт.</a>
+                            <div class="price">560.00</div>
+                            <div class="greenbg">
+                            <button class="green">
+                              <div class="korzina-btn"><img src="img/korzina.png"></div>
+                              <div class="price-btn">Купить</div>
+                            </button>
+                            </div>
+                            <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/tovar3.png">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                            <a href="#" class="ok-text">Рифуола эмуно чтото там, 124 шт.</a>
+                            <div class="price">560.00</div>
+                            <div class="greenbg">
+                            <button class="green">
+                              <div class="korzina-btn"><img src="img/korzina.png"></div>
+                              <div class="price-btn">Купить</div>
+                            </button>
+                            </div>
+                            <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/tovar1.png">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                              <a href="#" class="ok-text">Мульти витамин экстра для женщин капсулы, 124 шт.</a>
+                              <div class="price">560.00</div>
+                              <div class="greenbg">
+                              <button class="green">
+                                <div class="korzina-btn"><img src="img/korzina.png"></div>
+                                <div class="price-btn">Купить</div>
+                              </button>
+                              </div>
+                              <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="tovarcol">
+                        <img src="img/tovar2.png">
+                        <div class="animate-btn">
+                          <div class="animate-btn-gradient">
+                          </div>
+                          <div  class="animate-btn-whitebg">
+                            <a href="#" class="ok-text">"Энергетический тортик", 124 шт.</a>
+                            <div class="price">560.00</div>
+                            <div class="greenbg">
+                            <button class="green">
+                              <div class="korzina-btn"><img src="img/korzina.png"></div>
+                              <div class="price-btn">Купить</div>
+                            </button>
+                            </div>
+                            <a href="#" class="ok-text">Отложить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
 
+            </div><!-- end row-->
+          </div>
+        </div>
+
+        <div class="string">
+            <table>
+                <tr>
+                   <td class="col-md-1"><img src="img/skidki-logo2.png"></td>
+                   <td class="col-md-7 text">Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия</td>
+                   <td class="col-md-2 amount">140 560.00 Р</td>
+                   <td class="col-md-1 price-btn"><a href="#">Купить</a></td>
+                   <td class="col-md-1 ok-text"><a href="#">Отложить</a></td>
+                </tr>
+                <tr>
+                   <td class="col-md-1"><img src="img/skidki-logo2.png"></td>
+                   <td class="col-md-7 text">Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия</td>
+                   <td class="col-md-2 amount">140 560.00 Р</td>
+                   <td class="col-md-1 price-btn"><a href="#">Купить</a></td>
+                   <td class="col-md-1 ok-text"><a href="#">Отложить</a></td>
+                </tr>
+                <tr>
+                   <td class="col-md-1"><img src="img/skidki-logo2.png"></td>
+                   <td class="col-md-7 text">Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия</td>
+                   <td class="col-md-2 amount">140 560.00 Р</td>
+                   <td class="col-md-1 price-btn"><a href="#">Купить</a></td>
+                   <td class="col-md-1 ok-text"><a href="#">Отложить</a></td>
+                </tr>
+                <tr>
+                   <td class="col-md-1"><img src="img/skidki-logo2.png"></td>
+                   <td class="col-md-7 text">Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия</td>
+                   <td class="col-md-2 amount">140 560.00 Р</td>
+                   <td class="col-md-1 price-btn"><a href="#">Купить</a></td>
+                   <td class="col-md-1 ok-text"><a href="#">Отложить</a></td>
+                </tr>
+                <tr>
+                   <td class="col-md-1"><img src="img/skidki-logo2.png"></td>
+                   <td class="col-md-7 text">Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия</td>
+                   <td class="col-md-2 amount">140 560.00 Р</td>
+                   <td class="col-md-1 price-btn"><a href="#">Купить</a></td>
+                   <td class="col-md-1 ok-text"><a href="#">Отложить</a></td>
+                </tr>
+                <tr>
+                   <td class="col-md-1"><img src="img/skidki-logo2.png"></td>
+                   <td class="col-md-7 text">Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия</td>
+                   <td class="col-md-2 amount">140 560.00 Р</td>
+                   <td class="col-md-1 price-btn"><a href="#">Купить</a></td>
+                   <td class="col-md-1 ok-text"><a href="#">Отложить</a></td>
+                </tr>
+                <tr>
+                   <td class="col-md-1"><img src="img/skidki-logo2.png"></td>
+                   <td class="col-md-7 text">Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия</td>
+                   <td class="col-md-2 amount">140 560.00 Р</td>
+                   <td class="col-md-1 price-btn"><a href="#">Купить</a></td>
+                   <td class="col-md-1 ok-text"><a href="#">Отложить</a></td>
+                </tr>
+                <tr>
+                   <td class="col-md-1"><img src="img/skidki-logo2.png"></td>
+                   <td class="col-md-7 text">Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия</td>
+                   <td class="col-md-2 amount">140 560.00 Р</td>
+                   <td class="col-md-1 price-btn"><a href="#">Купить</a></td>
+                   <td class="col-md-1 ok-text"><a href="#">Отложить</a></td>
+                </tr>
+                <tr>
+                   <td class="col-md-1"><img src="img/skidki-logo2.png"></td>
+                   <td class="col-md-7 text">Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия</td>
+                   <td class="col-md-2 amount">140 560.00 Р</td>
+                   <td class="col-md-1 price-btn"><a href="#">Купить</a></td>
+                   <td class="col-md-1 ok-text"><a href="#">Отложить</a></td>
+                </tr>
+                <tr>
+                   <td class="col-md-1"><img src="img/skidki-logo2.png"></td>
+                   <td class="col-md-7 text">Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия</td>
+                   <td class="col-md-2 amount">140 560.00 Р</td>
+                   <td class="col-md-1 price-btn"><a href="#">Купить</a></td>
+                   <td class="col-md-1 ok-text"><a href="#">Отложить</a></td>
+                </tr>
+                <tr>
+                   <td class="col-md-1"><img src="img/skidki-logo2.png"></td>
+                   <td class="col-md-7 text">Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия</td>
+                   <td class="col-md-2 amount">140 560.00 Р</td>
+                   <td class="col-md-1 price-btn"><a href="#">Купить</a></td>
+                   <td class="col-md-1 ok-text"><a href="#">Отложить</a></td>
+                </tr>
+                 <tr>
+                   <td class="col-md-1"><img src="img/skidki-logo2.png"></td>
+                   <td class="col-md-7 text">Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия Батончик шоколадный "с органическим йодом" кокосовый 35 г факел-дизайн пкп ооо rus-россия</td>
+                   <td class="col-md-2 amount">140 560.00 Р</td>
+                   <td class="col-md-1 price-btn"><a href="#">Купить</a></td>
+                   <td class="col-md-1 ok-text"><a href="#">Отложить</a></td>
+                </tr>
+            </table>
 
 
+        </div>
 
 
+            <div class="content-pager">
+          <ul class="pager">
+            <li><a class="arrow" href="#">← Назад</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a class="active" href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">95</a></li>
+            <li><a class="arrow" href="#">Вперед →</a></li>
+          </ul>
+        </div>   
 
+                      
+                  </div>
+              </div>
 
-
-
-
-
-
+              
 
 
           
