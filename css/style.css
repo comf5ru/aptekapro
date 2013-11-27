@@ -3144,3 +3144,36 @@ margin-right: 11px;
     margin-top:10px;
     margin-bottom:10px;
 }
+
+.for404 {
+    background: #fff url(../img/404.png)center  no-repeat;
+    min-width: 100%;
+    min-height: 558px;
+}
+
+
+
+.for404 .errors{ 
+    position: absolute;
+    left: 43%;
+    top: 340px;
+    width: 255px;
+    
+}
+
+
+.errors p{
+    font-size: 11px;
+    color: #444;
+    margin-bottom: 0px;
+    line-height: 16px;
+}
+
+
+.errors a{
+    font-size: 11px;
+    color: #d00037;
+}
+body.error{
+    background: none;
+}
